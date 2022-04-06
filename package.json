@@ -1,0 +1,29 @@
+{
+  "name": "style",
+  "version": "1.0.0",
+  "description": "This repository is to manage the style.json for base map of geohub",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "npm run build:style && npm run build:sprite",
+    "build:style": "charites build style.yml docs/style.json",
+    "build:sprite": "node src/sprite-create.js",
+    "serve": "charites serve style.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UNDP-Data/style.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UNDP-Data/style/issues"
+  },
+  "homepage": "https://github.com/UNDP-Data/style#readme",
+  "dependencies": {
+    "@unvt/charites": "^0.1.4",
+    "@watergis/sprite-creator": "^0.1.0"
+  }
+}
