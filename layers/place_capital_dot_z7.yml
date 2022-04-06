@@ -18,7 +18,7 @@ layout:
     - HanWangHeiLight Regular
     - NanumBarunGothic Regular
   text-size: 12
-  icon-image: city
+  icon-image: circle
   icon-offset:
     - 16
     - 5
