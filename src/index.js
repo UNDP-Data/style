@@ -1,9 +1,9 @@
-const SpriteCreator = require('@watergis/sprite-creator');
+const SpriteCreator = require('./sprite-creator');
 const config = require('./config')
 
 const example = () =>{
     console.time('sprite-create');
-    const spriteCreator = new SpriteCreator();
+    const spriteCreator = new SpriteCreator(true);
     spriteCreator.build(config.sprites);
     console.timeEnd('sprite-create');
 };

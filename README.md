@@ -26,6 +26,13 @@ $npm run build
 $charites serve style.yml
 ```
 
+## create sprite
+
+
+```
+npm run spritezero sprite maki-icons/ --retina --ratio=2 --sdf
+```
+
 ## License
 
 The license of style belong to CARTO. See [License](./LICENSE).
