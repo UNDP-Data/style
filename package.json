@@ -8,7 +8,8 @@
   },
   "scripts": {
     "build": "npm run build:style && npm run build:sprite",
-    "build:style": "charites build style.yml docs/style.json",
+    "build:style": "charites build style.yml docs/style.json && charites build aerialstyle.yml docs/aerialstyle.json",
+    
     "build:sprite": "node src/index.js",
     "serve": "charites serve style.yml"
   },
