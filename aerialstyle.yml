@@ -18,6 +18,13 @@ sources:
   carto:
     type: vector
     url: https://tiles.basemaps.cartocdn.com/vector/carto.streets/v1/tiles.json
+  admin:
+    type: vector
+    maxzoom: 10
+    promoteId: adm1_id
+    tiles:
+      - >-
+        https://undpngddlsgeohubdev01.blob.core.windows.net/admin/adm1_polygons/{z}/{x}/{y}.pbf
 sprite: https://undp-data.github.io/style/sprite/sprite
 glyphs: https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf
 layers:
@@ -52,5 +59,6 @@ layers:
   - !!inc/file layers/roadname_pri.yml
   - !!inc/file layers/roadname_major.yml
   - !!inc/file layers/housenumber.yml
+  - !!inc/file layers/admin.yml
 id: aerial
 owner: UNDP

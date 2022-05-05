@@ -5,6 +5,13 @@ sources:
   carto:
     type: vector
     url: https://tiles.basemaps.cartocdn.com/vector/carto.streets/v1/tiles.json
+  admin:
+    type: vector
+    maxzoom: 10
+    promoteId: adm1_id
+    tiles:
+      - >-
+        https://undpngddlsgeohubdev01.blob.core.windows.net/admin/adm1_polygons/{z}/{x}/{y}.pbf
 # sprite: https://tiles.basemaps.cartocdn.com/gl/voyager-gl-style/sprite
 sprite: https://undp-data.github.io/style/sprite/sprite
 # sprite: http://127.0.0.1:5500/docs/sprite/sprite
@@ -103,5 +110,6 @@ layers:
   - !!inc/file layers/roadname_pri.yml
   - !!inc/file layers/roadname_major.yml
   - !!inc/file layers/housenumber.yml
+  - !!inc/file layers/admin.yml
 id: voyager
 owner: Carto
