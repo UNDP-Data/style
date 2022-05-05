@@ -1,0 +1,21 @@
+id: admin
+type: fill
+source: admin
+source-layer: adm1_polygons
+paint:
+  fill-color:
+    - case
+    - - boolean
+      - - feature-state
+        - hover
+      - false
+    - hsla(0, 0%, 0%, 0.05)
+    - hsla(0, 0%, 0%, 0)
+  fill-outline-color:
+    - case
+    - - boolean
+      - - feature-state
+        - hover
+      - false
+    - hsla(0, 0%, 0%, 1)
+    - hsla(0, 0%, 0%, 0)

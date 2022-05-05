@@ -6,6 +6,14 @@
     "carto": {
       "type": "vector",
       "url": "https://tiles.basemaps.cartocdn.com/vector/carto.streets/v1/tiles.json"
+    },
+    "admin": {
+      "type": "vector",
+      "maxzoom": 10,
+      "promoteId": "adm1_id",
+      "tiles": [
+        "https://undpngddlsgeohubdev01.blob.core.windows.net/admin/adm1_polygons/{z}/{x}/{y}.pbf"
+      ]
     }
   },
   "sprite": "https://undp-data.github.io/style/sprite/sprite",
@@ -5885,6 +5893,40 @@
         "text-halo-color": "rgba(255,255,255,0.15)",
         "text-color": "#d2b17d",
         "text-halo-width": 0.75
+      }
+    },
+    {
+      "id": "admin",
+      "type": "fill",
+      "source": "admin",
+      "source-layer": "adm1_polygons",
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "boolean",
+            [
+              "feature-state",
+              "hover"
+            ],
+            false
+          ],
+          "hsla(0, 0%, 0%, 0.05)",
+          "hsla(0, 0%, 0%, 0)"
+        ],
+        "fill-outline-color": [
+          "case",
+          [
+            "boolean",
+            [
+              "feature-state",
+              "hover"
+            ],
+            false
+          ],
+          "hsla(0, 0%, 0%, 1)",
+          "hsla(0, 0%, 0%, 0)"
+        ]
       }
     }
   ],
