@@ -4,7 +4,8 @@ metadata: {}
 sources:
   bing:
     type: raster
-    tiles: [
+    tiles:
+      [
         "https://ecn.t0.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=1",
         "https://ecn.t1.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=1",
         "https://ecn.t2.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=1",
@@ -13,7 +14,7 @@ sources:
         "https://ecn.t5.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=1",
         "https://ecn.t6.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=1",
         "https://ecn.t7.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=1",
-    ]
+      ]
     attribution: 'Map tiles by <a target="_top" rel="noopener" href="httpa://bing.com">Microsoft</a>, under <a target="_top" rel="noopener" href="https://www.microsoft.com/en-us/maps/product">Microsoft Bing Maps Platform APIs Terms Of Use</a>'
   carto:
     type: vector
