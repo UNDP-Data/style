@@ -60,6 +60,5 @@ layers:
   - !!inc/file layers/roadname_pri.yml
   - !!inc/file layers/roadname_major.yml
   - !!inc/file layers/housenumber.yml
-  - !!inc/file layers/admin.yml
 id: aerial
 owner: UNDP

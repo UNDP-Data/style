@@ -9,7 +9,6 @@
   "scripts": {
     "build": "npm run build:style && npm run build:sprite",
     "build:style": "charites build style.yml docs/style.json && charites build aerialstyle.yml docs/aerialstyle.json",
-    
     "build:sprite": "node src/index.js",
     "serve": "charites serve style.yml"
   },
@@ -24,9 +23,9 @@
   },
   "homepage": "https://github.com/UNDP-Data/style#readme",
   "dependencies": {
-    "@elastic/spritezero": "^6.2.0",
+    "@elastic/spritezero": "^6.2.1",
     "@unvt/charites": "^0.1.4",
-    "fs": "^0.0.1-security",
+    "fs": "0.0.1-security",
     "glog": "^1.7.0",
     "path": "^0.12.7",
     "rimraf": "^3.0.2"
