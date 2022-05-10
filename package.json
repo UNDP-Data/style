@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/UNDP-Data/style#readme",
   "dependencies": {
-    "@elastic/spritezero": "^6.2.1",
+    "@mapbox/spritezero": "^8.0.0",
     "@unvt/charites": "^0.1.4",
     "fs": "0.0.1-security",
     "glog": "^1.7.0",
