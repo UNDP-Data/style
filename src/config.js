@@ -7,5 +7,10 @@ module.exports = {
       icons: [path.resolve(__dirname, "../maki-icons")],
       isSDF: true
     },
+    {
+      output_dir: path.resolve(__dirname, "../docs/sprite-non-sdf"),
+      icons: [path.resolve(__dirname, "../maki-icons")],
+      isSDF: false
+    },
   ],
 };
