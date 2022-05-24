@@ -12,11 +12,12 @@ class SpriteCreator {
     sprites.forEach((s) => {
       let output_dir = s.output_dir;
       let icons = s.icons;
-      this.create(output_dir, icons);
+      let isSDF = s.isSDF || false;
+      this.create(output_dir, icons, isSDF);
     });
   }
 
-  create(output_dir, icons) {
+  create(output_dir, icons, isSDF) {
     const this_ = this;
     let svgs = [];
     icons.forEach((dir) => {
@@ -29,7 +30,7 @@ class SpriteCreator {
     fs.mkdirSync(output_dir);
 
     [1, 2, 4].forEach(function (pxRatio) {
-      this_.generateSprite(pxRatio, svgs, output_dir);
+      this_.generateSprite(pxRatio, svgs, output_dir, isSDF);
     });
   }
 
@@ -50,7 +51,7 @@ class SpriteCreator {
     }
   }
 
-  generateSprite(pxRatio, svgs, output_dir) {
+  generateSprite(pxRatio, svgs, output_dir, isSDF) {
     var pngPath = path.resolve(
       path.join(output_dir, `/sprite${this.suffix(pxRatio)}.png`)
     );
@@ -64,9 +65,11 @@ class SpriteCreator {
       { imgs: svgs, pixelRatio: pxRatio, format: true },
       function (err, dataLayout) {
         if (err) return;
-        Object.keys(dataLayout).forEach(key=>{
-          dataLayout[key].sdf = true
-        })
+        if (isSDF && isSDF === true) {
+          Object.keys(dataLayout).forEach(key=>{
+            dataLayout[key].sdf = true
+          })
+        }
         fs.writeFileSync(jsonPath, JSON.stringify(dataLayout, null, 2));
       }
     );
