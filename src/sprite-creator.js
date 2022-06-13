@@ -1,4 +1,4 @@
-const spritezero = require("@mapbox/spritezero");
+const spritezero = require("@elastic/spritezero");
 const fs = require("fs");
 const glob = require("glob");
 const path = require("path");
@@ -12,11 +12,12 @@ class SpriteCreator {
     sprites.forEach((s) => {
       let output_dir = s.output_dir;
       let icons = s.icons;
-      this.create(output_dir, icons);
+      let isSDF = s.isSDF || false;
+      this.create(output_dir, icons, isSDF);
     });
   }
 
-  create(output_dir, icons) {
+  create(output_dir, icons, isSDF) {
     const this_ = this;
     let svgs = [];
     icons.forEach((dir) => {
@@ -29,7 +30,7 @@ class SpriteCreator {
     fs.mkdirSync(output_dir);
 
     [1, 2, 4].forEach(function (pxRatio) {
-      this_.generateSprite(pxRatio, svgs, output_dir);
+      this_.generateSprite(pxRatio, svgs, output_dir, isSDF);
     });
   }
 
@@ -50,7 +51,7 @@ class SpriteCreator {
     }
   }
 
-  generateSprite(pxRatio, svgs, output_dir) {
+  generateSprite(pxRatio, svgs, output_dir, isSDF) {
     var pngPath = path.resolve(
       path.join(output_dir, `/sprite${this.suffix(pxRatio)}.png`)
     );
@@ -61,12 +62,9 @@ class SpriteCreator {
     // Pass `true` in the layout parameter to generate a data layout
     // suitable for exporting to a JSON sprite manifest file.
     spritezero.generateLayout(
-      { imgs: svgs, pixelRatio: pxRatio, format: true },
+      { imgs: svgs, pixelRatio: pxRatio, sdf: isSDF, format: true },
       function (err, dataLayout) {
         if (err) return;
-        Object.keys(dataLayout).forEach(key=>{
-          dataLayout[key].sdf = true
-        })
         fs.writeFileSync(jsonPath, JSON.stringify(dataLayout, null, 2));
       }
     );
@@ -74,7 +72,7 @@ class SpriteCreator {
     // Pass `false` in the layout parameter to generate an image layout
     // suitable for exporting to a PNG sprite image file.
     spritezero.generateLayout(
-      { imgs: svgs, pixelRatio: pxRatio, format: false },
+      { imgs: svgs, pixelRatio: pxRatio, sdf: isSDF, format: false },
       function (err, imageLayout) {
         if (err) return;
         spritezero.generateImage(imageLayout, function (err, image) {
