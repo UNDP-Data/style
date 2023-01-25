@@ -6,6 +6,17 @@
     "carto": {
       "type": "vector",
       "url": "https://tiles.basemaps.cartocdn.com/vector/carto.streets/v1/tiles.json"
+    },
+    "terrarium": {
+      "type": "raster-dem",
+      "attribution": "&copy; <a href=\"https://github.com/tilezen/joerd/blob/master/docs/attribution.md\" target=\"_blank\" rel=\"noopener\">Tilezen Joerd</a>",
+      "tiles": [
+        "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"
+      ],
+      "minzoom": 0,
+      "maxzoom": 15,
+      "tileSize": 256,
+      "encoding": "terrarium"
     }
   },
   "sprite": "https://undp-data.github.io/style/sprite/sprite",
@@ -20,6 +31,16 @@
       "paint": {
         "background-color": "#fbf8f3",
         "background-opacity": 1
+      }
+    },
+    {
+      "id": "hillshade",
+      "type": "hillshade",
+      "source": "terrarium",
+      "paint": {
+        "hillshade-shadow-color": "hsl(39, 21%, 33%)",
+        "hillshade-illumination-direction": 315,
+        "hillshade-exaggeration": 0.8
       }
     },
     {
