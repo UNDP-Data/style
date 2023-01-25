@@ -28,6 +28,11 @@ sources:
     maxzoom: 15
     tileSize: 256
     encoding: terrarium
+    bounds:
+      - -180
+      - -90
+      - 180
+      - 90
 sprite: https://undp-data.github.io/style/sprite/sprite
 glyphs: https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf
 layers:

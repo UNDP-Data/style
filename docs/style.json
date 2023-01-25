@@ -16,7 +16,13 @@
       "minzoom": 0,
       "maxzoom": 15,
       "tileSize": 256,
-      "encoding": "terrarium"
+      "encoding": "terrarium",
+      "bounds": [
+        -180,
+        -90,
+        180,
+        90
+      ]
     }
   },
   "sprite": "https://undp-data.github.io/style/sprite/sprite",
