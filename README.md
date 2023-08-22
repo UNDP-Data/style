@@ -46,6 +46,15 @@ pnpm serve:aerial
 pnpm build:sprite
 ```
 
+## Release map style
+
+The procedure for releasing map style to NPM is as follows.
+
+- create release note by the following command `pnpm changeset`.
+- create new PR to merge to main branch.
+- changeset will create new PR to release packages.
+- changeset will release packages once the PR is merged to main.
+
 ## License
 
 The license of style belong to CARTO. See [License](./LICENSE).

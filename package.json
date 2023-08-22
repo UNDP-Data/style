@@ -13,7 +13,8 @@
     "build:aerialstyle": "pnpm charites build assets/aerialstyle.yml docs/aerialstyle.json",
     "build:sprite": "node src/index.js",
     "serve": "pnpm charites serve assets/style.yml",
-    "serve:aerial": "pnpm charites serve assets/aerialstyle.yml"
+    "serve:aerial": "pnpm charites serve assets/aerialstyle.yml",
+    "release": "changeset publish"
   },
   "keywords": [
     "maplibre-gl-js",
@@ -33,7 +34,8 @@
     "url": "https://github.com/UNDP-Data/style/issues"
   },
   "homepage": "https://github.com/UNDP-Data/style#readme",
-  "dependencies": {
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "@elastic/spritezero": "6.2.1",
     "@unvt/charites": "^0.4.0",
     "glog": "^1.7.0",
