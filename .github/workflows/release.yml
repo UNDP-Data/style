@@ -32,6 +32,9 @@ jobs:
           node-version: 18.x
           cache: pnpm
 
+      - name: git config
+        run: git config --global url."https://github.com/".insteadOf 'git@github.com:'
+
       - name: install dependencies
         run: pnpm install --frozen-lockfile
 
