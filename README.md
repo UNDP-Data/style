@@ -11,13 +11,13 @@ Check the latest version of `@undp-data/style` package at [npmjs](https://www.np
 - OSM style
 
 ```
-https://unpkg.com/@undp-data/style@0.0.1/dist/style.json
+https://unpkg.com/@undp-data/style@1.0.0/dist/style.json
 ```
 
 - Bing aerial style
 
 ```
-https://unpkg.com/@undp-data/style@0.0.1/dist/aerialstyle.json
+https://unpkg.com/@undp-data/style@1.0.0/dist/aerialstyle.json
 ```
 
 ### Sprite
