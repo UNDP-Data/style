@@ -3,7 +3,11 @@
   "extends": [
     "config:base"
   ],
-  "excludePackageNames": [
-    "@elastic/spritezero"
+  "packageRules": [
+    {
+      "excludePackageNames": [
+        "@elastic/spritezero"
+      ]
+    }
   ]
 }
