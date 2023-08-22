@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 1.0.2
+
+### Patch Changes
+
+- 563bd3b: fix: downgraded elastic/spritezero to 6.2.0 since 6.2.1 has a bug
+
 ## 1.0.1
 
 ### Patch Changes
