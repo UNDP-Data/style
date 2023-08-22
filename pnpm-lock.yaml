@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^2.26.2
     version: 2.26.2
   '@elastic/spritezero':
-    specifier: 6.2.1
-    version: 6.2.1
+    specifier: 6.2.0
+    version: 6.2.0
   '@unvt/charites':
     specifier: ^0.5.2
     version: 0.5.2
@@ -244,8 +244,8 @@ packages:
       rbush: 1.3.5
     dev: true
 
-  /@elastic/spritezero@6.2.1:
-    resolution: {integrity: sha512-J8GMvQhT2FkIJSDqyqnt7+foNFoiMITy+x05HlosOr3LufkROuS2xKP941A3cfBLHK3DfWXksDUFwjF3XXcmiw==}
+  /@elastic/spritezero@6.2.0:
+    resolution: {integrity: sha512-OL5ixceoKiqpMAj/5oRhCeydBQZ2IgwSoDIjcAvqE7z+mk0qF39Rze/iL5VwWsk6F3dbgiPKLS3iIzPTCw35tw==}
     engines: {node: '>=10.0.0'}
     dependencies:
       '@elastic/fontnik': 0.1.0

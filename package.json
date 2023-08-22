@@ -36,7 +36,7 @@
   "homepage": "https://github.com/UNDP-Data/style#readme",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
-    "@elastic/spritezero": "6.2.1",
+    "@elastic/spritezero": "6.2.0",
     "@unvt/charites": "^0.5.2",
     "glob": "^10.3.3",
     "rimraf": "^5.0.1"
