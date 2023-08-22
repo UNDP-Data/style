@@ -2,6 +2,39 @@
 
 This repository is to manage the style.json for base map of geohub
 
+## Usage
+
+### Maplibre style.json
+
+Check the latest version of `@undp-data/style` package at [npmjs](https://www.npmjs.com/package/@undp-data/style?activeTab=versions), and replace the version of `0.0.1` to the latest one. Or, you may use `latest` to fetch style.json from CDN. But we strongly recommend to specify the version to prevent any breaking change error on style.json.
+
+- OSM style
+
+```
+https://unpkg.com/@undp-data/style@0.0.1/dist/style.json
+```
+
+- Bing aerial style
+
+```
+https://unpkg.com/@undp-data/style@0.0.1/dist/aerialstyle.json
+```
+
+### Sprite
+
+- SDF
+
+```
+https://unpkg.com/@undp-data/style@latest/dist/sprite/sprite
+```
+
+- Non SDF
+
+```
+https://unpkg.com/@undp-data/style@latest/dist/sprite-non-sdf/sprite
+```
+
+
 ## Install
 
 ```shell
