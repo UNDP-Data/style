@@ -1,23 +1,34 @@
 {
-  "name": "style",
+  "name": "@undp-data/style",
   "version": "1.0.0",
   "description": "This repository is to manage the style.json for base map of geohub",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "files": [
+    "docs",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "build": "npm run build:style && npm run build:sprite",
-    "build:style": "charites build style.yml docs/style.json && charites build aerialstyle.yml docs/aerialstyle.json",
+    "build": "mkdir -p dist && pnpm build:style && pnpm build:aerialstyle && pnpm build:sprite",
+    "build:style": "pnpm charites build assets/style.yml docs/style.json",
+    "build:aerialstyle": "pnpm charites build assets/aerialstyle.yml docs/aerialstyle.json",
     "build:sprite": "node src/index.js",
-    "serve": "charites serve style.yml"
+    "serve": "pnpm charites serve assets/style.yml",
+    "serve:aerial": "pnpm charites serve assets/aerialstyle.yml"
   },
+  "keywords": [
+    "maplibre-gl-js",
+    "maplibre",
+    "style",
+    "sprite",
+    "charites"
+  ],
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UNDP-Data/style.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "United Nations Development Programme",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/UNDP-Data/style/issues"
   },
@@ -25,9 +36,7 @@
   "dependencies": {
     "@elastic/spritezero": "6.2.1",
     "@unvt/charites": "^0.4.0",
-    "fs": "0.0.1-security",
     "glog": "^1.7.0",
-    "path": "^0.12.7",
     "rimraf": "^4.1.2"
   }
 }

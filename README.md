@@ -1,36 +1,49 @@
-# style
+# @undp-data/style
 
 This repository is to manage the style.json for base map of geohub
 
-## prepare
+## Install
 
-```bash
-$npm i
+```shell
+pnpm i
 ```
 
-## initial import carto style.json
+### M1 Mac
 
-```bash
-$curl https://tiles.basemaps.cartocdn.com/gl/voyager-gl-style/style.json | $charites convert - style.yml
+If you are using M1 Mac, sprite-zero cannot be installed in normal nodejs, so please install nodejs by using NVM as following commands.
+
+```shell
+$nvm uninstall 18
+$arch -x86_64 zsh
+$nvm install 18
+$nvm alias default 18
 ```
 
-## build style.yml
+## Build style.json
 
-```bash
-$npm run build
+```shell
+pnpm build:style
+pnpm build:aerialstyle
 ```
 
-## preview style.yml
+## Develop style.json
 
-```bash
-$charites serve style.yml
+- launch preview for OSM style
+
+```shell
+pnpm serve
 ```
 
-## create sprite
+- launch preview for Bing aerial style
 
-
+```shell
+pnpm serve:aerial
 ```
-npm run spritezero sprite maki-icons/ --retina --ratio=2 --sdf
+
+## Build sprite
+
+```shell
+pnpm build:sprite
 ```
 
 ## License
