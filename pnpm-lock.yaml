@@ -12,14 +12,14 @@ devDependencies:
     specifier: 6.2.1
     version: 6.2.1
   '@unvt/charites':
-    specifier: ^0.4.0
-    version: 0.4.0
+    specifier: ^0.5.2
+    version: 0.5.2
   glob:
     specifier: ^10.3.3
     version: 10.3.3
   rimraf:
-    specifier: ^4.1.2
-    version: 4.1.2
+    specifier: ^5.0.1
+    version: 5.0.1
 
 packages:
 
@@ -414,8 +414,8 @@ packages:
     resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
     dev: true
 
-  /@unvt/charites@0.4.0:
-    resolution: {integrity: sha512-UHXtUvjnjhNHc4jnY/knQJIJOorf1qi08djf6gv9ZOJGeKqOUq7vxzKWHI3PaHSfyuciUBomDn6DovCb/gF89w==}
+  /@unvt/charites@0.5.2:
+    resolution: {integrity: sha512-b27oKyguNn4i1Ehxuagcsxrn64exIEkdhol2Qv6m2wacj6Z2yNpgqI9hHKwgJbA6fOnBZhSX3NVh442QkSEcyg==}
     hasBin: true
     dependencies:
       '@mapbox/mapbox-gl-style-spec': 13.28.0
@@ -1412,7 +1412,7 @@ packages:
       foreground-child: 3.1.1
       jackspeak: 2.3.0
       minimatch: 9.0.3
-      minipass: 5.0.0
+      minipass: 7.0.3
       path-scurry: 1.10.1
     dev: true
 
@@ -2132,6 +2132,11 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /minipass@7.0.3:
+    resolution: {integrity: sha512-LhbbwCfz3vsb12j/WkWQPZfKTsgqIe1Nf/ti1pKjYESGLHIVjWU96G9/ljLH4F9mWNVhlQOm0VySdAWzf05dpg==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dev: true
+
   /minizlib@2.1.2:
     resolution: {integrity: sha512-bAxsR8BVfj60DWXHE3u30oHzfl4G7khkSuPW+qvpd7jFRHm7dLxOjUk1EHACJ/hxLY8phGJ0YhYHZo7jil7Qdg==}
     engines: {node: '>= 8'}
@@ -2372,7 +2377,7 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       lru-cache: 10.0.1
-      minipass: 5.0.0
+      minipass: 7.0.3
     dev: true
 
   /path-type@4.0.0:
@@ -2664,11 +2669,12 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rimraf@4.1.2:
-    resolution: {integrity: sha512-BlIbgFryTbw3Dz6hyoWFhKk+unCcHMSkZGrTFVAx2WmttdBSonsdtRlwiuTbDqTKr+UlXIUqJVS4QT5tUzGENQ==}
+  /rimraf@5.0.1:
+    resolution: {integrity: sha512-OfFZdwtd3lZ+XZzYP/6gTACubwFcHdLRqS9UX3UwpU2dnGQYkPFISRwvM3w9IiB2w7bW5qGo/uAwE4SmXXSKvg==}
     engines: {node: '>=14'}
-    deprecated: Please upgrade to 4.3.1 or higher to fix a potentially damaging issue regarding symbolic link following. See https://github.com/isaacs/rimraf/issues/259 for details.
     hasBin: true
+    dependencies:
+      glob: 10.3.3
     dev: true
 
   /run-parallel@1.2.0:
