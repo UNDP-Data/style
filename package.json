@@ -1,6 +1,6 @@
 {
   "name": "@undp-data/style",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "This repository is to manage the style.json for base map of geohub",
   "files": [
     "dist",

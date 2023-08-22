@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 1.0.0
+
+### Major Changes
+
+- 1befc86: first major release!!
+
 ## 0.0.3
 
 ### Patch Changes
