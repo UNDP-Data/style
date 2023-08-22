@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 0.0.3
+
+### Patch Changes
+
+- b199f41: fix: package.json's build script
+
 ## 0.0.2
 
 ### Patch Changes
