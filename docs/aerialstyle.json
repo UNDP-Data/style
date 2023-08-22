@@ -39,7 +39,7 @@
       ]
     }
   },
-  "sprite": "https://undp-data.github.io/style/sprite/sprite",
+  "sprite": "https://unpkg.com/@undp-data/style@latest/dist/sprite/sprite",
   "glyphs": "https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf",
   "layers": [
     {
