@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 1.0.3
+
+### Patch Changes
+
+- 9e82740: fix: changed sprite version to 1.0.2
+
 ## 1.0.2
 
 ### Patch Changes
