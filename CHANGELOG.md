@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 1.0.1
+
+### Patch Changes
+
+- 0244263: fix: changed sprite version from latest to 1.0.0 in style.json and aerialstyle.json
+
 ## 1.0.0
 
 ### Major Changes
