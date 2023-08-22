@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "This repository is to manage the style.json for base map of geohub",
   "files": [
-    "docs",
+    "dist",
     "README.md",
     "LICENSE"
   ],
