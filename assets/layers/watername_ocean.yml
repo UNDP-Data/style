@@ -26,11 +26,7 @@ layout:
       - - 4
         - 18
   text-font:
-    - Montserrat Medium Italic
-    - Open Sans Italic
-    - Noto Sans Regular
-    - HanWangHeiLight Regular
-    - NanumBarunGothic Regular
+    - Proxima Nova Regular Italic
   text-line-height: 1.2
   text-padding: 2
   text-allow-overlap: false

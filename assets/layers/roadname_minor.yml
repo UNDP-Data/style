@@ -12,11 +12,7 @@ filter:
 layout:
   symbol-placement: line
   text-font:
-    - Montserrat Regular
-    - Open Sans Regular
-    - Noto Sans Regular
-    - HanWangHeiLight Regular
-    - NanumBarunGothic Regular
+    - Proxima Nova Regular
   text-size: 9
   text-field: '{name}'
   symbol-avoid-edges: false

@@ -20,11 +20,7 @@ layout:
       - - 14
         - '{name}'
   text-font:
-    - Montserrat Regular
-    - Open Sans Regular
-    - Noto Sans Regular
-    - HanWangHeiLight Regular
-    - NanumBarunGothic Regular
+    - Proxima Nova Bold
   text-size:
     stops:
       - - 13
