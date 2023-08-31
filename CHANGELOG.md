@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 1.1.0
+
+### Minor Changes
+
+- f2f8653: feat: changed fonts from CARTO's to UNDP Design's Proxima Nova font
+
 ## 1.0.3
 
 ### Patch Changes
