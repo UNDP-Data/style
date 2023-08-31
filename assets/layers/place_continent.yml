@@ -12,11 +12,7 @@ filter:
 layout:
   text-field: '{name_en}'
   text-font:
-    - Montserrat Medium
-    - Open Sans Bold
-    - Noto Sans Regular
-    - HanWangHeiLight Regular
-    - NanumBarunGothic Regular
+    - Proxima Nova Bold
   text-transform: uppercase
   text-size: 14
   text-letter-spacing: 0.1

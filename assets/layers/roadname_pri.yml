@@ -11,11 +11,7 @@ filter:
 layout:
   symbol-placement: line
   text-font:
-    - Montserrat Regular
-    - Open Sans Regular
-    - Noto Sans Regular
-    - HanWangHeiLight Regular
-    - NanumBarunGothic Regular
+    - Proxima Nova Regular
   text-size:
     stops:
       - - 14
