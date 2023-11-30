@@ -8,7 +8,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "pnpm build:style && pnpm build:aerialstyle && pnpm build:sprite",
+    "build": "mkdir -p docs && pnpm build:style && pnpm build:aerialstyle && pnpm build:sprite",
     "build:style": "pnpm charites build assets/style.yml docs/style.json",
     "build:aerialstyle": "pnpm charites build assets/aerialstyle.yml docs/aerialstyle.json",
     "build:sprite": "node src/index.js",
