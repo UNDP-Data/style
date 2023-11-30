@@ -1,5 +1,12 @@
 # @undp-data/style
 
+## 1.1.1
+
+### Patch Changes
+
+- c02a40b: fix: hide hillshade layer from base style as default
+- d6b87ee: fix: change the order of waterway_label to bring it to the same level of other annotation layers
+
 ## 1.1.0
 
 ### Minor Changes
