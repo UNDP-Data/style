@@ -36,7 +36,6 @@ layers:
   - !!inc/file layers/water_shadow.yml
   - !!inc/file layers/aeroway-runway.yml
   - !!inc/file layers/aeroway-taxiway.yml
-  - !!inc/file layers/waterway_label.yml
   - !!inc/file layers/tunnel_service_case.yml
   - !!inc/file layers/tunnel_minor_case.yml
   - !!inc/file layers/tunnel_sec_case.yml
@@ -90,6 +89,7 @@ layers:
   - !!inc/file layers/building-top.yml
   - !!inc/file layers/boundary_country_outline.yml
   - !!inc/file layers/boundary_country_inner.yml
+  - !!inc/file layers/waterway_label.yml
   - !!inc/file layers/watername_ocean.yml
   - !!inc/file layers/watername_sea.yml
   - !!inc/file layers/watername_lake.yml
