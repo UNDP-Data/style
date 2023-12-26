@@ -8,12 +8,6 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "mkdir -p docs && pnpm build:style && pnpm build:aerialstyle && pnpm build:sprite",
-    "build:style": "pnpm charites build assets/style.yml docs/style.json",
-    "build:aerialstyle": "pnpm charites build assets/aerialstyle.yml docs/aerialstyle.json",
-    "build:sprite": "node src/index.js",
-    "serve": "pnpm charites serve assets/style.yml",
-    "serve:aerial": "pnpm charites serve assets/aerialstyle.yml",
     "release": "changeset publish"
   },
   "keywords": [
@@ -35,10 +29,8 @@
   },
   "homepage": "https://github.com/UNDP-Data/style#readme",
   "devDependencies": {
-    "@changesets/cli": "^2.26.2",
-    "@elastic/spritezero": "6.2.0",
-    "@unvt/charites": "^0.5.2",
-    "glob": "^10.3.3",
-    "rimraf": "^5.0.1"
+    "@changesets/cli": "^2.27.1",
+    "@unvt/charites": "^0.5.4",
+    "@unvt/sprite-one": "^0.1.1"
   }
 }
