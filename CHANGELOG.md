@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 1.2.0
+
+### Minor Changes
+
+- 2f9dac8: chore: switched elastic/spritezero to unvt/sprite-one to generate sprite files. Migrate scripts in package.json to Makefile
+
 ## 1.1.1
 
 ### Patch Changes
