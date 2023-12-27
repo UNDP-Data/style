@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 1.2.1
+
+### Patch Changes
+
+- ad966d6: fix: update sprite file version to v1.2.0
+
 ## 1.2.0
 
 ### Minor Changes
