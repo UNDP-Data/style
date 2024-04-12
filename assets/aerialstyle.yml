@@ -33,7 +33,7 @@ sources:
       - -90
       - 180
       - 90
-sprite: https://unpkg.com/@undp-data/style@1.2.0/dist/sprite/sprite
+sprite: https://cdn.jsdelivr.net/npm/@undp-data/style@1.2.0/dist/sprite/sprite
 glyphs: https://fonts.undpgeohub.org/fonts/{fontstack}/{range}.pbf
 layers:
   - !!inc/file layers/bingaerial.yml
