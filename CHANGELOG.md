@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 1.2.2
+
+### Patch Changes
+
+- a20c909: fix: added paths of style files and sprite files to exports in package.json
+
 ## 1.2.1
 
 ### Patch Changes
