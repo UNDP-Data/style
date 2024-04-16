@@ -1,6 +1,6 @@
 {
   "name": "@undp-data/style",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "This repository is to manage the style.json for base map of geohub",
   "files": [
     "dist",
@@ -8,59 +8,59 @@
     "LICENSE"
   ],
   "exports": {
-		"./dist/style.json": {
-			"import": "./dist/style.json",
-			"require": "./dist/style.json"
-		},
+    "./dist/style.json": {
+      "import": "./dist/style.json",
+      "require": "./dist/style.json"
+    },
     "./dist/aerialstyle.json": {
-			"import": "./dist/aerialstyle.json",
-			"require": "./dist/aerialstyle.json"
-		},
+      "import": "./dist/aerialstyle.json",
+      "require": "./dist/aerialstyle.json"
+    },
     "./dist/sprite/sprite.json": {
-			"import": "./dist/sprite/sprite.json",
-			"require": "./dist/sprite/sprite.json"
-		},
+      "import": "./dist/sprite/sprite.json",
+      "require": "./dist/sprite/sprite.json"
+    },
     "./dist/sprite/sprite.png": {
-			"import": "./dist/sprite/sprite.png",
-			"require": "./dist/sprite/sprite.png"
-		},
+      "import": "./dist/sprite/sprite.png",
+      "require": "./dist/sprite/sprite.png"
+    },
     "./dist/sprite/sprite@2x.json": {
-			"import": "./dist/sprite/sprite@2x.json",
-			"require": "./dist/sprite/sprite@2x.json"
-		},
+      "import": "./dist/sprite/sprite@2x.json",
+      "require": "./dist/sprite/sprite@2x.json"
+    },
     "./dist/sprite/sprite@2x.png": {
-			"import": "./dist/sprite/sprite@2x.png",
-			"require": "./dist/sprite/sprite@2x.png"
-		},
+      "import": "./dist/sprite/sprite@2x.png",
+      "require": "./dist/sprite/sprite@2x.png"
+    },
     "./dist/sprite/sprite@4x.json": {
-			"import": "./dist/sprite/sprite@4x.json",
-			"require": "./dist/sprite/sprite@4x.json"
-		},
+      "import": "./dist/sprite/sprite@4x.json",
+      "require": "./dist/sprite/sprite@4x.json"
+    },
     "./dist/sprite/sprite@4x.png": {
-			"import": "./dist/sprite/sprite@4x.png",
-			"require": "./dist/sprite/sprite@4x.png"
-		},
+      "import": "./dist/sprite/sprite@4x.png",
+      "require": "./dist/sprite/sprite@4x.png"
+    },
     "./dist/sprite-non-sdf/sprite.png": {
-			"import": "./dist/sprite-non-sdf/sprite.png",
-			"require": "./dist/sprite-non-sdf/sprite.png"
-		},
+      "import": "./dist/sprite-non-sdf/sprite.png",
+      "require": "./dist/sprite-non-sdf/sprite.png"
+    },
     "./dist/sprite-non-sdf/sprite@2x.json": {
-			"import": "./dist/sprite-non-sdf/sprite@2x.json",
-			"require": "./dist/sprite-non-sdf/sprite@2x.json"
-		},
+      "import": "./dist/sprite-non-sdf/sprite@2x.json",
+      "require": "./dist/sprite-non-sdf/sprite@2x.json"
+    },
     "./dist/sprite-non-sdf/sprite@2x.png": {
-			"import": "./dist/sprite-non-sdf/sprite@2x.png",
-			"require": "./dist/sprite-non-sdf/sprite@2x.png"
-		},
+      "import": "./dist/sprite-non-sdf/sprite@2x.png",
+      "require": "./dist/sprite-non-sdf/sprite@2x.png"
+    },
     "./dist/sprite-non-sdf/sprite@4x.json": {
-			"import": "./dist/sprite-non-sdf/sprite@4x.json",
-			"require": "./dist/sprite-non-sdf/sprite@4x.json"
-		},
+      "import": "./dist/sprite-non-sdf/sprite@4x.json",
+      "require": "./dist/sprite-non-sdf/sprite@4x.json"
+    },
     "./dist/sprite-non-sdf/sprite@4x.png": {
-			"import": "./dist/sprite-non-sdf/sprite@4x.png",
-			"require": "./dist/sprite-non-sdf/sprite@4x.png"
-		}
-	},
+      "import": "./dist/sprite-non-sdf/sprite@4x.png",
+      "require": "./dist/sprite-non-sdf/sprite@4x.png"
+    }
+  },
   "scripts": {
     "release": "changeset publish"
   },
