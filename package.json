@@ -8,6 +8,10 @@
     "LICENSE"
   ],
   "exports": {
+    "./package.json": {
+      "import": "./package.json",
+      "require": "./package.json"
+    },
     "./dist/style.json": {
       "import": "./dist/style.json",
       "require": "./dist/style.json"
