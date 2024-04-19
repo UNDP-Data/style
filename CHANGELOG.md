@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.0.1
+
+### Patch Changes
+
+- 409ac0c: fix: added package.json to exports
+
 ## 2.0.0
 
 ### Major Changes
