@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.0.0
+
+### Major Changes
+
+- 3d5e987: fix: BREAKING CHANGE. Change sprite path from CDN to relative path
+
 ## 1.2.2
 
 ### Patch Changes
