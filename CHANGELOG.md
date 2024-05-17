@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.1.1
+
+### Patch Changes
+
+- b9e9af0: fix: add dark.json to exports of package.json
+
 ## 2.1.0
 
 ### Minor Changes
