@@ -1,0 +1,53 @@
+id: place_city_r6
+type: symbol
+source: carto
+source-layer: place
+minzoom: 8
+maxzoom: 15
+filter:
+  - all
+  - - '=='
+    - class
+    - city
+  - - '>='
+    - rank
+    - 6
+layout:
+  text-field:
+    stops:
+      - - 8
+        - '{name_en}'
+      - - 13
+        - '{name}'
+  text-font:
+    - Open Sans Bold
+  text-size:
+    stops:
+      - - 8
+        - 12
+      - - 9
+        - 13
+      - - 10
+        - 14
+      - - 13
+        - 17
+      - - 14
+        - 20
+  icon-image: ''
+  icon-offset:
+    - 16
+    - 0
+  text-anchor: center
+  icon-size: 1
+  text-max-width: 10
+  text-keep-upright: true
+  text-offset:
+    - 0.2
+    - 0.2
+  text-transform: uppercase
+paint:
+  text-color: rgba(168, 176, 180, 1)
+  icon-color: '#666'
+  icon-translate-anchor: map
+  text-halo-color: '#222'
+  text-halo-width: 1

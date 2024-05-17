@@ -1,0 +1,27 @@
+id: poi_park
+type: symbol
+source: carto
+source-layer: poi
+minzoom: 15
+filter:
+  - all
+  - - '=='
+    - class
+    - park
+layout:
+  text-field: '{name}'
+  text-font:
+    - Open Sans Bold
+  text-size:
+    stops:
+      - - 15
+        - 8
+      - - 17
+        - 9
+      - - 18
+        - 10
+  text-transform: uppercase
+paint:
+  text-color: '#515151'
+  text-halo-color: '#151515'
+  text-halo-width: 1

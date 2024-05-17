@@ -1,0 +1,20 @@
+id: housenumber
+type: symbol
+source: carto
+source-layer: housenumber
+minzoom: 17
+maxzoom: 24
+layout:
+  text-field: '{housenumber}'
+  text-size:
+    stops:
+      - - 17
+        - 9
+      - - 18
+        - 11
+  text-font:
+    - Open Sans Regular
+paint:
+  text-halo-color: transparent
+  text-color: transparent
+  text-halo-width: 0.75
