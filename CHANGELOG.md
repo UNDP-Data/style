@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.1.0
+
+### Minor Changes
+
+- df20945: feat: add dark matter style by borrowing from carto.
+
 ## 2.0.1
 
 ### Patch Changes
