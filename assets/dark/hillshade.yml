@@ -2,7 +2,7 @@ id: hillshade
 type: hillshade
 source: terrarium
 layout:
-  visibility: visible
+  visibility: none
 paint:
   hillshade-shadow-color: hsl(39, 21%, 33%)
   hillshade-illumination-direction: 315
