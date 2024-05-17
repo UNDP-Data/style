@@ -16,6 +16,10 @@
       "import": "./dist/style.json",
       "require": "./dist/style.json"
     },
+    "./dist/dark.json": {
+      "import": "./dist/dark.json",
+      "require": "./dist/dark.json"
+    },
     "./dist/aerialstyle.json": {
       "import": "./dist/aerialstyle.json",
       "require": "./dist/aerialstyle.json"
