@@ -1,0 +1,54 @@
+id: place_hamlet
+type: symbol
+source: carto
+source-layer: place
+minzoom: 12
+maxzoom: 16
+filter:
+  - any
+  - - '=='
+    - class
+    - neighbourhood
+  - - '=='
+    - class
+    - hamlet
+layout:
+  text-field:
+    stops:
+      - - 8
+        - '{name_en}'
+      - - 14
+        - '{name}'
+  text-font:
+    - Open Sans Regular
+  text-size:
+    stops:
+      - - 13
+        - 8
+      - - 14
+        - 10
+      - - 16
+        - 11
+  icon-image: ''
+  icon-offset:
+    - 16
+    - 0
+  text-anchor: center
+  icon-size: 1
+  text-max-width: 10
+  text-keep-upright: true
+  text-offset:
+    - 0.2
+    - 0.2
+  text-transform:
+    stops:
+      - - 12
+        - none
+      - - 14
+        - uppercase
+paint:
+  text-color: rgba(182, 180, 180, 1)
+  icon-color: '#666'
+  icon-translate-anchor: map
+  text-halo-color: rgba(53, 52, 52, 1)
+  text-halo-width: 1

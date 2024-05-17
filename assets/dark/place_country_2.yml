@@ -1,0 +1,44 @@
+id: place_country_2
+type: symbol
+source: carto
+source-layer: place
+minzoom: 3
+maxzoom: 10
+filter:
+  - all
+  - - '=='
+    - class
+    - country
+  - - '>='
+    - rank
+    - 3
+  - - has
+    - iso_a2
+layout:
+  text-field: '{name_en}'
+  text-font:
+    - Open Sans Bold
+  text-size:
+    stops:
+      - - 3
+        - 10
+      - - 5
+        - 11
+      - - 6
+        - 12
+      - - 7
+        - 13
+      - - 8
+        - 14
+  text-transform: uppercase
+paint:
+  text-color:
+    stops:
+      - - 3
+        - rgba(157, 157, 157, 1)
+      - - 5
+        - rgba(114, 114, 114, 1)
+      - - 6
+        - rgba(112, 112, 112, 1)
+  text-halo-color: '#111'
+  text-halo-width: 1

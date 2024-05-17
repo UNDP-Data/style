@@ -1,0 +1,55 @@
+id: place_suburbs
+type: symbol
+source: carto
+source-layer: place
+minzoom: 12
+maxzoom: 16
+filter:
+  - all
+  - - '=='
+    - class
+    - suburb
+layout:
+  text-field:
+    stops:
+      - - 8
+        - '{name_en}'
+      - - 13
+        - '{name}'
+  text-font:
+    - Open Sans Regular
+  text-size:
+    stops:
+      - - 12
+        - 9
+      - - 13
+        - 10
+      - - 14
+        - 11
+      - - 15
+        - 12
+      - - 16
+        - 13
+  icon-image: ''
+  icon-offset:
+    - 16
+    - 0
+  text-anchor: center
+  icon-size: 1
+  text-max-width: 10
+  text-keep-upright: true
+  text-offset:
+    - 0.2
+    - 0.2
+  text-transform:
+    stops:
+      - - 8
+        - none
+      - - 12
+        - uppercase
+paint:
+  text-color: '#666'
+  icon-color: '#666'
+  icon-translate-anchor: map
+  text-halo-color: '#222'
+  text-halo-width: 1

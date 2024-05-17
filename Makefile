@@ -11,9 +11,11 @@ help:
 	@echo "  style         to build style files"
 	@echo "  build-voyager to build only voyager style"
 	@echo "  build-aerial  to build only aerial style"
+	@echo "  build-dark    to build only dark style"
 	@echo "  sprite        to build only sprite"
 	@echo "  voyager       to develop voyager style YAML"
 	@echo "  aerial        to develop aerial style YAML"
+	@echo "  dark          to develop dark style YAML"
 
 build: clean style sprite
 
@@ -24,7 +26,7 @@ clean:
 	@echo "------------------------------------------------------------------"
 	rm -rf docs
 
-style: build-voyager build-aerial
+style: build-voyager build-aerial build-dark
 
 build-voyager:
 	@echo
@@ -41,6 +43,14 @@ build-aerial:
 	@echo "------------------------------------------------------------------"
 	mkdir -p docs
 	pnpm charites build assets/aerialstyle.yml docs/aerialstyle.json
+
+build-dark:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Building dark style"
+	@echo "------------------------------------------------------------------"
+	mkdir -p docs
+	pnpm charites build assets/dark.yml docs/dark.json
 
 sprite:
 	@echo
@@ -69,3 +79,10 @@ aerial:
 	@echo "Launching a local server to edit Aerial style"
 	@echo "------------------------------------------------------------------"
 	pnpm charites serve assets/aerialstyle.yml --sprite-input $(iconFolder) --sdf
+
+dark:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Launching a local server to edit Dark style"
+	@echo "------------------------------------------------------------------"
+	pnpm charites serve assets/dark.yml --sprite-input $(iconFolder) --sdf

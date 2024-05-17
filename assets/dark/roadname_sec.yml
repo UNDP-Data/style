@@ -1,0 +1,33 @@
+id: roadname_sec
+type: symbol
+source: carto
+source-layer: transportation_name
+minzoom: 15
+filter:
+  - all
+  - - in
+    - class
+    - secondary
+    - tertiary
+layout:
+  symbol-placement: line
+  text-font:
+    - Open Sans Regular
+  text-size:
+    stops:
+      - - 15
+        - 9
+      - - 16
+        - 11
+      - - 18
+        - 12
+  text-field: '{name}'
+  symbol-avoid-edges: false
+  symbol-spacing: 200
+  text-pitch-alignment: auto
+  text-rotation-alignment: auto
+  text-justify: center
+paint:
+  text-color: rgba(146, 146, 146, 1)
+  text-halo-color: rgba(34, 34, 34, 1)
+  text-halo-width: 1

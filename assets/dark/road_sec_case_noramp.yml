@@ -1,0 +1,45 @@
+id: road_sec_case_noramp
+type: line
+source: carto
+source-layer: transportation
+minzoom: 11
+maxzoom: 24
+filter:
+  - all
+  - - in
+    - class
+    - secondary
+    - tertiary
+  - - '!has'
+    - brunnel
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-width:
+    stops:
+      - - 11
+        - 0.9
+      - - 12
+        - 1.5
+      - - 13
+        - 3
+      - - 14
+        - 5
+      - - 15
+        - 6
+      - - 16
+        - 8
+      - - 17
+        - 12
+      - - 18
+        - 16
+  line-opacity: 1
+  line-color:
+    stops:
+      - - 11
+        - rgba(65, 71, 88, 1)
+      - - 12.99
+        - rgba(65, 71, 88, 1)
+      - - 13
+        - rgba(65, 71, 88, 1)

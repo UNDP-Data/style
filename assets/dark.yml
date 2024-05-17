@@ -1,0 +1,119 @@
+version: 8
+name: Dark Matter
+sources:
+  carto:
+    type: vector
+    url: https://tiles.basemaps.cartocdn.com/vector/carto.streets/v1/tiles.json
+  terrarium:
+    type: raster-dem
+    attribution: '&copy; <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noopener">Tilezen Joerd</a>'
+    tiles:
+      - https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png
+    minzoom: 0
+    maxzoom: 15
+    tileSize: 256
+    encoding: terrarium
+    bounds:
+      - -180
+      - -90
+      - 180
+      - 90
+sprite: ./sprite/sprite
+glyphs: https://fonts.undpgeohub.org/fonts/{fontstack}/{range}.pbf
+layers:
+  - !!inc/file dark/background.yml
+  - !!inc/file dark/hillshade.yml
+  - !!inc/file dark/landcover.yml
+  - !!inc/file dark/park_national_park.yml
+  - !!inc/file dark/park_nature_reserve.yml
+  - !!inc/file dark/landuse_residential.yml
+  - !!inc/file dark/landuse.yml
+  - !!inc/file dark/waterway.yml
+  - !!inc/file dark/boundary_county.yml
+  - !!inc/file dark/boundary_state.yml
+  - !!inc/file dark/water.yml
+  - !!inc/file dark/water_shadow.yml
+  - !!inc/file dark/aeroway-runway.yml
+  - !!inc/file dark/aeroway-taxiway.yml
+  - !!inc/file dark/tunnel_service_case.yml
+  - !!inc/file dark/tunnel_minor_case.yml
+  - !!inc/file dark/tunnel_sec_case.yml
+  - !!inc/file dark/tunnel_pri_case.yml
+  - !!inc/file dark/tunnel_trunk_case.yml
+  - !!inc/file dark/tunnel_mot_case.yml
+  - !!inc/file dark/tunnel_path.yml
+  - !!inc/file dark/tunnel_service_fill.yml
+  - !!inc/file dark/tunnel_minor_fill.yml
+  - !!inc/file dark/tunnel_sec_fill.yml
+  - !!inc/file dark/tunnel_pri_fill.yml
+  - !!inc/file dark/tunnel_trunk_fill.yml
+  - !!inc/file dark/tunnel_mot_fill.yml
+  - !!inc/file dark/tunnel_rail.yml
+  - !!inc/file dark/tunnel_rail_dash.yml
+  - !!inc/file dark/road_service_case.yml
+  - !!inc/file dark/road_minor_case.yml
+  - !!inc/file dark/road_pri_case_ramp.yml
+  - !!inc/file dark/road_trunk_case_ramp.yml
+  - !!inc/file dark/road_mot_case_ramp.yml
+  - !!inc/file dark/road_sec_case_noramp.yml
+  - !!inc/file dark/road_pri_case_noramp.yml
+  - !!inc/file dark/road_trunk_case_noramp.yml
+  - !!inc/file dark/road_mot_case_noramp.yml
+  - !!inc/file dark/road_path.yml
+  - !!inc/file dark/road_service_fill.yml
+  - !!inc/file dark/road_minor_fill.yml
+  - !!inc/file dark/road_pri_fill_ramp.yml
+  - !!inc/file dark/road_trunk_fill_ramp.yml
+  - !!inc/file dark/road_mot_fill_ramp.yml
+  - !!inc/file dark/road_sec_fill_noramp.yml
+  - !!inc/file dark/road_pri_fill_noramp.yml
+  - !!inc/file dark/road_trunk_fill_noramp.yml
+  - !!inc/file dark/road_mot_fill_noramp.yml
+  - !!inc/file dark/rail.yml
+  - !!inc/file dark/rail_dash.yml
+  - !!inc/file dark/bridge_service_case.yml
+  - !!inc/file dark/bridge_minor_case.yml
+  - !!inc/file dark/bridge_sec_case.yml
+  - !!inc/file dark/bridge_pri_case.yml
+  - !!inc/file dark/bridge_trunk_case.yml
+  - !!inc/file dark/bridge_mot_case.yml
+  - !!inc/file dark/bridge_path.yml
+  - !!inc/file dark/bridge_service_fill.yml
+  - !!inc/file dark/bridge_minor_fill.yml
+  - !!inc/file dark/bridge_sec_fill.yml
+  - !!inc/file dark/bridge_pri_fill.yml
+  - !!inc/file dark/bridge_trunk_fill.yml
+  - !!inc/file dark/bridge_mot_fill.yml
+  - !!inc/file dark/building.yml
+  - !!inc/file dark/building-top.yml
+  - !!inc/file dark/boundary_country_outline.yml
+  - !!inc/file dark/boundary_country_inner.yml
+  - !!inc/file dark/waterway_label.yml
+  - !!inc/file dark/watername_ocean.yml
+  - !!inc/file dark/watername_sea.yml
+  - !!inc/file dark/watername_lake.yml
+  - !!inc/file dark/watername_lake_line.yml
+  - !!inc/file dark/place_hamlet.yml
+  - !!inc/file dark/place_suburbs.yml
+  - !!inc/file dark/place_villages.yml
+  - !!inc/file dark/place_town.yml
+  - !!inc/file dark/place_country_2.yml
+  - !!inc/file dark/place_country_1.yml
+  - !!inc/file dark/place_state.yml
+  - !!inc/file dark/place_continent.yml
+  - !!inc/file dark/place_city_r6.yml
+  - !!inc/file dark/place_city_r5.yml
+  - !!inc/file dark/place_city_dot_r7.yml
+  - !!inc/file dark/place_city_dot_r4.yml
+  - !!inc/file dark/place_city_dot_r2.yml
+  - !!inc/file dark/place_city_dot_z7.yml
+  - !!inc/file dark/place_capital_dot_z7.yml
+  - !!inc/file dark/poi_stadium.yml
+  - !!inc/file dark/poi_park.yml
+  - !!inc/file dark/roadname_minor.yml
+  - !!inc/file dark/roadname_sec.yml
+  - !!inc/file dark/roadname_pri.yml
+  - !!inc/file dark/roadname_major.yml
+  - !!inc/file dark/housenumber.yml
+id: voyager
+owner: Carto
