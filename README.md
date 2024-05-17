@@ -17,13 +17,19 @@ Check the latest version of `@undp-data/style` package at [npmjs](https://www.np
 - OSM style
 
 ```
-https://unpkg.com/@undp-data/style@1.0.1/dist/style.json
+https://unpkg.com/@undp-data/style@latest/dist/style.json
 ```
 
 - Bing aerial style
 
 ```
-https://unpkg.com/@undp-data/style@1.0.1/dist/aerialstyle.json
+https://unpkg.com/@undp-data/style@latest/dist/aerialstyle.json
+```
+
+- Bing aerial style
+
+```
+https://unpkg.com/@undp-data/style@latest/dist/dark.json
 ```
 
 ### Sprite
@@ -31,7 +37,7 @@ https://unpkg.com/@undp-data/style@1.0.1/dist/aerialstyle.json
 - SDF
 
 ```
-https://unpkg.com/@undp-data/style@1.0.1/dist/sprite/sprite
+https://unpkg.com/@undp-data/style@latest/dist/sprite/sprite
 ```
 
 Note. Don't upgrade spritezero to v6.2.1 since it has a bug when we specify --ratio=2.
@@ -39,7 +45,7 @@ Note. Don't upgrade spritezero to v6.2.1 since it has a bug when we specify --ra
 - Non SDF
 
 ```
-https://unpkg.com/@undp-data/style@1.0.1/dist/sprite-non-sdf/sprite
+https://unpkg.com/@undp-data/style@latest/dist/sprite-non-sdf/sprite
 ```
 
 
@@ -90,6 +96,12 @@ make voyager
 
 ```shell
 make aerial
+```
+
+- launch preview for Dark style
+
+```shell
+make dark
 ```
 
 ## Release map style
