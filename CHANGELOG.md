@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.2.0
+
+### Minor Changes
+
+- 07c00e0: feat: add Positron base style from Carto.
+
 ## 2.1.1
 
 ### Patch Changes
