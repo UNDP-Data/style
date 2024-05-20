@@ -1,0 +1,29 @@
+id: landcover
+type: fill
+source: carto
+source-layer: landcover
+filter:
+  - any
+  - - '=='
+    - class
+    - wood
+  - - '=='
+    - class
+    - grass
+  - - '=='
+    - subclass
+    - recreation_ground
+paint:
+  fill-color:
+    stops:
+      - - 8
+        - rgba(234, 241, 233, 0.5)
+      - - 9
+        - rgba(234, 241, 233, 0.5)
+      - - 11
+        - rgba(234, 241, 233, 0.5)
+      - - 13
+        - rgba(234, 241, 233, 0.5)
+      - - 15
+        - rgba(234, 241, 233, 0.5)
+  fill-opacity: 1

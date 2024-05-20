@@ -1,0 +1,32 @@
+id: park_nature_reserve
+type: fill
+source: carto
+source-layer: park
+minzoom: 0
+filter:
+  - all
+  - - '=='
+    - class
+    - nature_reserve
+layout:
+  visibility: visible
+paint:
+  fill-color:
+    stops:
+      - - 8
+        - rgba(234, 241, 233, 0.5)
+      - - 9
+        - rgba(234, 241, 233, 0.5)
+      - - 11
+        - rgba(234, 241, 233, 0.5)
+      - - 13
+        - rgba(234, 241, 233, 0.5)
+      - - 15
+        - rgba(234, 241, 233, 0.5)
+  fill-antialias: true
+  fill-opacity:
+    stops:
+      - - 6
+        - 0.7
+      - - 9
+        - 0.9
