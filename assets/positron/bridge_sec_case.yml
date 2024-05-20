@@ -1,0 +1,46 @@
+id: bridge_sec_case
+type: line
+source: carto
+source-layer: transportation
+minzoom: 11
+maxzoom: 24
+filter:
+  - all
+  - - in
+    - class
+    - secondary
+    - tertiary
+  - - '=='
+    - brunnel
+    - bridge
+layout:
+  line-cap: butt
+  line-join: miter
+paint:
+  line-width:
+    stops:
+      - - 11
+        - 0.5
+      - - 12
+        - 1.5
+      - - 13
+        - 3
+      - - 14
+        - 5
+      - - 15
+        - 6
+      - - 16
+        - 8
+      - - 17
+        - 12
+      - - 18
+        - 16
+  line-opacity: 1
+  line-color:
+    stops:
+      - - 11
+        - '#e6e6e6'
+      - - 12.99
+        - '#e6e6e6'
+      - - 13
+        - '#ddd'

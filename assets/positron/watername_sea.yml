@@ -1,0 +1,34 @@
+id: watername_sea
+type: symbol
+source: carto
+source-layer: water_name
+minzoom: 5
+filter:
+  - all
+  - - has
+    - name
+  - - '=='
+    - $type
+    - Point
+  - - '=='
+    - class
+    - sea
+layout:
+  text-field: '{name}'
+  symbol-placement: point
+  text-size: 12
+  text-font:
+    - Open Sans Italic
+  text-line-height: 1.2
+  text-padding: 2
+  text-allow-overlap: false
+  text-ignore-placement: false
+  text-pitch-alignment: auto
+  text-rotation-alignment: auto
+  text-max-width: 6
+  text-letter-spacing: 0.1
+paint:
+  text-color: '#abb6be'
+  text-halo-color: '#d4dadc'
+  text-halo-width: 1
+  text-halo-blur: 0

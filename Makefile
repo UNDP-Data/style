@@ -6,16 +6,18 @@ iconFolder = "assets/maki-icons"
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo "  build         to build styles and sprites"
-	@echo "  clean         to clean build folder"
-	@echo "  style         to build style files"
-	@echo "  build-voyager to build only voyager style"
-	@echo "  build-aerial  to build only aerial style"
-	@echo "  build-dark    to build only dark style"
-	@echo "  sprite        to build only sprite"
-	@echo "  voyager       to develop voyager style YAML"
-	@echo "  aerial        to develop aerial style YAML"
-	@echo "  dark          to develop dark style YAML"
+	@echo "  build          to build styles and sprites"
+	@echo "  clean          to clean build folder"
+	@echo "  style          to build style files"
+	@echo "  build-voyager  to build only voyager style"
+	@echo "  build-aerial   to build only aerial style"
+	@echo "  build-dark     to build only dark style"
+	@echo "  build-positron to build only positron style"
+	@echo "  sprite         to build only sprite"
+	@echo "  voyager        to develop voyager style YAML"
+	@echo "  aerial         to develop aerial style YAML"
+	@echo "  dark           to develop dark style YAML"
+	@echo "  positron       to develop positron style YAML"
 
 build: clean style sprite
 
@@ -26,7 +28,7 @@ clean:
 	@echo "------------------------------------------------------------------"
 	rm -rf docs
 
-style: build-voyager build-aerial build-dark
+style: build-voyager build-aerial build-dark build-positron
 
 build-voyager:
 	@echo
@@ -51,6 +53,14 @@ build-dark:
 	@echo "------------------------------------------------------------------"
 	mkdir -p docs
 	pnpm charites build assets/dark.yml docs/dark.json
+
+build-positron:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Building positron style"
+	@echo "------------------------------------------------------------------"
+	mkdir -p docs
+	pnpm charites build assets/positron.yml docs/positron.json
 
 sprite:
 	@echo
@@ -86,3 +96,10 @@ dark:
 	@echo "Launching a local server to edit Dark style"
 	@echo "------------------------------------------------------------------"
 	pnpm charites serve assets/dark.yml --sprite-input $(iconFolder) --sdf
+
+positron:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Launching a local server to edit Positron style"
+	@echo "------------------------------------------------------------------"
+	pnpm charites serve assets/positron.yml --sprite-input $(iconFolder) --sdf

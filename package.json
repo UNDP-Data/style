@@ -20,6 +20,10 @@
       "import": "./dist/dark.json",
       "require": "./dist/dark.json"
     },
+    "./dist/positron.json": {
+      "import": "./dist/positron.json",
+      "require": "./dist/positron.json"
+    },
     "./dist/aerialstyle.json": {
       "import": "./dist/aerialstyle.json",
       "require": "./dist/aerialstyle.json"

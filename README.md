@@ -14,7 +14,7 @@ make help
 
 Check the latest version of `@undp-data/style` package at [npmjs](https://www.npmjs.com/package/@undp-data/style?activeTab=versions), and replace the version of `0.0.1` to the latest one. Or, you may use `latest` to fetch style.json from CDN. But we strongly recommend to specify the version to prevent any breaking change error on style.json.
 
-- OSM style
+- Voyager style
 
 ```
 https://unpkg.com/@undp-data/style@latest/dist/style.json
@@ -26,10 +26,16 @@ https://unpkg.com/@undp-data/style@latest/dist/style.json
 https://unpkg.com/@undp-data/style@latest/dist/aerialstyle.json
 ```
 
-- Bing aerial style
+- Dark style
 
 ```
 https://unpkg.com/@undp-data/style@latest/dist/dark.json
+```
+
+- Positron style
+
+```
+https://unpkg.com/@undp-data/style@latest/dist/positron.json
 ```
 
 ### Sprite
@@ -102,6 +108,12 @@ make aerial
 
 ```shell
 make dark
+```
+
+- launch preview for Positron style
+
+```shell
+make positron
 ```
 
 ## Release map style

@@ -1,0 +1,25 @@
+id: place_continent
+type: symbol
+source: carto
+source-layer: place
+minzoom: 0
+maxzoom: 2
+filter:
+  - all
+  - - '=='
+    - class
+    - continent
+layout:
+  text-field: '{name_en}'
+  text-font:
+    - Open Sans Bold
+  text-transform: uppercase
+  text-size: 14
+  text-letter-spacing: 0.1
+  text-max-width: 9
+  text-justify: center
+  text-keep-upright: false
+paint:
+  text-color: '#697b89'
+  text-halo-color: '#fafaf8'
+  text-halo-width: 1
