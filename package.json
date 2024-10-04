@@ -96,7 +96,7 @@
   "homepage": "https://github.com/UNDP-Data/style#readme",
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
-    "@unvt/charites": "^0.5.4",
+    "@unvt/charites": "^2.0.0",
     "@unvt/sprite-one": "^0.1.1"
   }
 }
