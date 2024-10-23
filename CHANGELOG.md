@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.3.1
+
+### Patch Changes
+
+- ce87c62: fix: changed background layer id
+
 ## 2.3.0
 
 ### Minor Changes
