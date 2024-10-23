@@ -16,7 +16,7 @@ jobs:
     permissions:
       contents: write # to create release (changesets/action)
       pull-requests: write # to create pull request (changesets/action)
-    name: Release
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: checkout code repository
