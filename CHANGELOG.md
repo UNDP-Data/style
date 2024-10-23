@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.3.0
+
+### Minor Changes
+
+- 8793701: feat: add blank map stype with only background layer and raster dem source.
+
 ## 2.2.0
 
 ### Minor Changes
