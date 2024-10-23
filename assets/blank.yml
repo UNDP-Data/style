@@ -19,4 +19,4 @@ sources:
 sprite: ./sprite/sprite
 glyphs: https://fonts.undpgeohub.org/fonts/{fontstack}/{range}.pbf
 layers:
-  - !!inc/file layers/background.yml
+  - !!inc/file blank/background.yml
