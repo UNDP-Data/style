@@ -102,5 +102,9 @@
     "@changesets/cli": "^2.27.9",
     "@unvt/charites": "^2.0.0",
     "@unvt/sprite-one": "^0.1.1"
+  },
+  "packageManager": "pnpm@9.12.2",
+  "engines": {
+    "pnpm": "^9.0.0"
   }
 }
