@@ -28,6 +28,10 @@
       "import": "./dist/aerialstyle.json",
       "require": "./dist/aerialstyle.json"
     },
+    "./dist/blank.json": {
+      "import": "./dist/blank.json",
+      "require": "./dist/blank.json"
+    },
     "./dist/sprite/sprite.json": {
       "import": "./dist/sprite/sprite.json",
       "require": "./dist/sprite/sprite.json"
@@ -95,8 +99,12 @@
   },
   "homepage": "https://github.com/UNDP-Data/style#readme",
   "devDependencies": {
-    "@changesets/cli": "^2.27.1",
+    "@changesets/cli": "^2.27.9",
     "@unvt/charites": "^2.0.0",
     "@unvt/sprite-one": "^0.1.1"
+  },
+  "packageManager": "pnpm@9.12.2",
+  "engines": {
+    "pnpm": "^9.0.0"
   }
 }

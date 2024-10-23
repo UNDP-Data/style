@@ -28,7 +28,7 @@ clean:
 	@echo "------------------------------------------------------------------"
 	rm -rf docs
 
-style: build-voyager build-aerial build-dark build-positron
+style: build-voyager build-aerial build-dark build-positron build-blank
 
 build-voyager:
 	@echo
@@ -61,6 +61,14 @@ build-positron:
 	@echo "------------------------------------------------------------------"
 	mkdir -p docs
 	pnpm charites build assets/positron.yml docs/positron.json
+
+build-blank:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Building blank style"
+	@echo "------------------------------------------------------------------"
+	mkdir -p docs
+	pnpm charites build assets/blank.yml docs/blank.json
 
 sprite:
 	@echo
@@ -103,3 +111,10 @@ positron:
 	@echo "Launching a local server to edit Positron style"
 	@echo "------------------------------------------------------------------"
 	pnpm charites serve assets/positron.yml --sprite-input $(iconFolder) --sdf
+
+blank:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Launching a local server to edit Blank style"
+	@echo "------------------------------------------------------------------"
+	pnpm charites serve assets/blank.yml --sprite-input $(iconFolder) --sdf

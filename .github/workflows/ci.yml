@@ -12,11 +12,11 @@ env:
 
 permissions: {}
 jobs:
-  release:
+  build:
     permissions:
       contents: write # to create release (changesets/action)
       pull-requests: write # to create pull request (changesets/action)
-    name: Release
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: checkout code repository
@@ -24,12 +24,10 @@ jobs:
         with:
           fetch-depth: 0
       - uses: pnpm/action-setup@v4.0.0
-        with:
-          version: 8.6.1
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18.x
+          node-version: 20.x
           cache: pnpm
 
       - name: git config
