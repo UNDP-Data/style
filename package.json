@@ -28,6 +28,10 @@
       "import": "./dist/aerialstyle.json",
       "require": "./dist/aerialstyle.json"
     },
+    "./dist/blank.json": {
+      "import": "./dist/blank.json",
+      "require": "./dist/blank.json"
+    },
     "./dist/sprite/sprite.json": {
       "import": "./dist/sprite/sprite.json",
       "require": "./dist/sprite/sprite.json"
