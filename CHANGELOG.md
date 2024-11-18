@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.3.2
+
+### Patch Changes
+
+- 3dd797d: fix: fixed the position of waterway-label layer in positron to be the same order with other styles
+
 ## 2.3.1
 
 ### Patch Changes
