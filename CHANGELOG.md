@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.3.3
+
+### Patch Changes
+
+- efd6beb: fix: renamed Proxima Nova Regular Italic to Proxima Nova Italic
+
 ## 2.3.2
 
 ### Patch Changes
