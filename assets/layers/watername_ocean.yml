@@ -26,7 +26,7 @@ layout:
       - - 4
         - 18
   text-font:
-    - Proxima Nova Regular Italic
+    - Proxima Nova Italic
   text-line-height: 1.2
   text-padding: 2
   text-allow-overlap: false

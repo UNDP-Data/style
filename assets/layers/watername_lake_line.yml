@@ -30,7 +30,7 @@ layout:
       - - 17
         - 13
   text-font:
-    - Proxima Nova Regular Italic
+    - Proxima Nova Italic
   symbol-spacing: 350
   text-pitch-alignment: auto
   text-rotation-alignment: auto

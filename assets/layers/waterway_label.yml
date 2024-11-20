@@ -12,7 +12,7 @@ filter:
 layout:
   text-field: '{name_en}'
   text-font:
-    - Proxima Nova Regular Italic
+    - Proxima Nova Italic
   symbol-placement: line
   symbol-spacing: 300
   symbol-avoid-edges: false
