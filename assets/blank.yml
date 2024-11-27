@@ -20,3 +20,4 @@ sprite: ./sprite/sprite
 glyphs: https://fonts.undpgeohub.org/fonts/{fontstack}/{range}.pbf
 layers:
   - !!inc/file blank/background.yml
+  - !!inc/file layers/hillshade.yml
