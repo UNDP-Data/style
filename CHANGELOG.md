@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.3.4
+
+### Patch Changes
+
+- f28f1b7: fix: add hidden hillshade layer to blank style.
+
 ## 2.3.3
 
 ### Patch Changes
