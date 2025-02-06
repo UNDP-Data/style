@@ -103,8 +103,8 @@
     "@unvt/charites": "^2.0.0",
     "@unvt/sprite-one": "^0.1.1"
   },
-  "packageManager": "pnpm@9.15.5",
+  "packageManager": "pnpm@10.2.1",
   "engines": {
-    "pnpm": "^9.0.0"
+    "pnpm": "^10.0.0"
   }
 }
