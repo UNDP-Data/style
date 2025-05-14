@@ -99,11 +99,11 @@
   },
   "homepage": "https://github.com/UNDP-Data/style#readme",
   "devDependencies": {
-    "@changesets/cli": "^2.29.2",
-    "@unvt/charites": "^2.1.0",
+    "@changesets/cli": "^2.29.4",
+    "@unvt/charites": "^2.1.1",
     "@unvt/sprite-one": "^0.1.1"
   },
-  "packageManager": "pnpm@10.9.0",
+  "packageManager": "pnpm@10.11.0",
   "engines": {
     "pnpm": "^10.0.0"
   }
