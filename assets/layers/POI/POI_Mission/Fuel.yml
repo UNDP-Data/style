@@ -1,0 +1,14 @@
+id: POI/POI_Mission/Fuel
+type: symbol
+source: esri
+source-layer: POI_Mission
+filter:
+  - ==
+  - _symbol
+  - 42
+minzoom: 14.85
+layout:
+  icon-image: POI_Fuel
+  icon-size: 1
+paint:
+  icon-color: '#CC3D61'

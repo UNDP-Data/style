@@ -1,0 +1,11 @@
+id: Hydrography/HYD_Waterbodies/Glacier/fill
+type: fill
+source: esri
+source-layer: HYD_Waterbodies
+filter:
+  - ==
+  - _symbol
+  - 2
+layout: {}
+paint:
+  fill-color: '#FBFCFB'

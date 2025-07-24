@@ -1,0 +1,23 @@
+id: Hydrography/HYD_Waterways_M/label/River_M
+type: symbol
+source: esri
+source-layer: HYD_Waterways_M/label
+minzoom: 9
+maxzoom: 11
+layout:
+  symbol-placement: line
+  symbol-spacing: 1000
+  text-font:
+    - Noto Sans Display Italic
+  text-size: 9.33333
+  text-anchor: bottom
+  text-offset:
+    - 0
+    - 0.157143
+  text-letter-spacing: 0.15
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  text-color: '#3D9CCC'
+  text-halo-color: rgba(255,255,255,0.5)
+  text-halo-width: 1

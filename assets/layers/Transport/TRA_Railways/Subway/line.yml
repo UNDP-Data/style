@@ -1,0 +1,23 @@
+id: Transport/TRA_Railways/Subway/line
+type: symbol
+source: esri
+source-layer: TRA_Railways
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 13
+layout:
+  symbol-placement: line
+  icon-image: TRA_Subway
+  icon-size:
+    stops:
+      - - 16
+        - 0.666667
+      - - 19
+        - 2
+  symbol-spacing: 2.66667
+  icon-rotation-alignment: map
+  icon-allow-overlap: true
+paint:
+  icon-color: '#80667D'

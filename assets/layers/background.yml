@@ -1,7 +1,9 @@
 id: background
 type: background
-layout:
-  visibility: visible
 paint:
-  background-color: '#fbf8f3'
-  background-opacity: 1
+  background-color:
+    stops:
+      - - 7
+        - '#FFFCF7'
+      - - 10
+        - '#FAF9F6'

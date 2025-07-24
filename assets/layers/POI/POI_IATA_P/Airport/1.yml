@@ -1,0 +1,70 @@
+id: POI/POI_IATA_P/Airport/1
+type: symbol
+source: esri
+source-layer: POI_IATA_P
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 10
+layout:
+  visibility: visible
+  text-size: 11.3333
+  icon-size:
+    stops:
+      - - 10
+        - 1
+      - - 11
+        - 1.2
+  text-font:
+    - Noto Sans Display Medium
+  text-max-width: 10
+  text-line-height: 1.2
+  text-padding: 0
+  text-letter-spacing: 0
+  text-allow-overlap: false
+  text-ignore-placement: false
+  text-justify: center
+  text-rotation-alignment: auto
+  text-optional: true
+  icon-allow-overlap: false
+  icon-optional: false
+  icon-ignore-placement: false
+  icon-rotation-alignment: auto
+  symbol-placement: point
+  symbol-avoid-edges: false
+  symbol-spacing: 250
+  text-anchor: bottom
+  icon-anchor: center
+  icon-offset:
+    - 0
+    - 0
+  text-offset:
+    stops:
+      - - 9
+        - - 0
+          - -0.75
+      - - 11
+        - - 0
+          - -1.2
+  icon-rotate: 0
+  text-rotate: 0
+  text-max-angle: 45
+  text-field: '{_name1}'
+  icon-image: POI_Airport
+  text-transform: none
+paint:
+  icon-opacity: 1
+  text-opacity: 1
+  text-color: '#802677'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333
+  text-halo-blur: 0
+  text-translate-anchor: map
+  icon-translate-anchor: map
+  icon-translate:
+    - 0
+    - 0
+  text-translate:
+    - 0
+    - 0

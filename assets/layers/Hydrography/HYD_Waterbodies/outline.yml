@@ -1,0 +1,19 @@
+id: Hydrography/HYD_Waterbodies/outline
+type: line
+source: esri
+source-layer: HYD_Waterbodies
+filter:
+  - '!='
+  - _symbol
+  - 1
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#B6DEF2'
+  line-width:
+    stops:
+      - - 11.53
+        - 0.666667
+      - - 18.17
+        - 3.33333

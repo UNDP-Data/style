@@ -1,0 +1,28 @@
+id: Transport/TRA_Bridges_L/Path/case
+type: line
+source: esri
+source-layer: TRA_Bridges_L
+filter:
+  - ==
+  - _symbol
+  - 4
+minzoom: 13
+layout:
+  line-join: round
+paint:
+  line-color:
+    stops:
+      - - 13
+        - rgba(255,255,255,0.75)
+      - - 14
+        - '#B3B3B3'
+  line-width:
+    stops:
+      - - 13
+        - 1
+      - - 15
+        - 2
+      - - 17
+        - 5
+      - - 19
+        - 16

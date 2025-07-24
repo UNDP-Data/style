@@ -1,0 +1,14 @@
+id: POI/POI_MINUSCA/Fuel
+type: symbol
+source: esri
+source-layer: POI_MINUSCA
+filter:
+  - ==
+  - _symbol
+  - 22
+minzoom: 15.85
+layout:
+  icon-image: POI_Fuel
+  icon-size: 1
+paint:
+  icon-color: '#CC3D61'

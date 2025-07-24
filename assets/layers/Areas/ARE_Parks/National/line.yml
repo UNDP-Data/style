@@ -1,0 +1,15 @@
+id: Areas/ARE_Parks/National/line
+type: line
+source: esri
+source-layer: ARE_Parks
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 8
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#8AB0A4'
+  line-width: 0.466667

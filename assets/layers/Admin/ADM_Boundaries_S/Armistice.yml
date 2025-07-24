@@ -1,0 +1,33 @@
+id: Admin/ADM_Boundaries_S/Armistice
+type: line
+source: esri
+source-layer: ADM_Boundaries_S
+filter:
+  - ==
+  - _symbol
+  - 1
+maxzoom: 4
+layout:
+  line-join: round
+paint:
+  line-color: '#737B80'
+  line-dasharray:
+    stops:
+      - - 1
+        - - 17.5
+          - 10
+      - - 3
+        - - 10.6667
+          - 6
+  line-width:
+    stops:
+      - - 1
+        - 0.133333
+      - - 3
+        - 0.5
+  line-opacity:
+    stops:
+      - - 3
+        - 1
+      - - 4
+        - 0

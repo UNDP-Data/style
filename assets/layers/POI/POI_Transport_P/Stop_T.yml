@@ -1,0 +1,19 @@
+id: POI/POI_Transport_P/Stop_T
+type: symbol
+source: esri
+source-layer: POI_Transport_P
+filter:
+  - ==
+  - _symbol
+  - 6
+minzoom: 16
+layout:
+  icon-image: POI_Stop_T
+  icon-size:
+    stops:
+      - - 16
+        - 1
+      - - 17
+        - 1.2
+paint:
+  icon-color: '#802677'

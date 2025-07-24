@@ -1,0 +1,20 @@
+id: Areas/ARE_Buildings/All/line
+type: line
+source: esri
+source-layer: ARE_Buildings
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 16
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: rgba(119,119,119,0.5)
+  line-width:
+    stops:
+      - - 16
+        - 0
+      - - 19
+        - 1

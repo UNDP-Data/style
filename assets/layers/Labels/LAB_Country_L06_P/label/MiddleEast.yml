@@ -1,0 +1,24 @@
+id: Labels/LAB_Country_L06_P/label/MiddleEast
+type: symbol
+source: esri
+source-layer: LAB_Country_L06_P
+filter:
+  - ==
+  - _label_class5
+  - 5
+minzoom: 5
+maxzoom: 6
+layout:
+  text-font:
+    - Open Sans Semibold
+  text-max-width: 20
+  text-size: 10.6667
+  text-anchor: center
+  text-letter-spacing: 0.05
+  text-field: '{_name5}'
+  text-allow-overlap: true
+  text-optional: true
+paint:
+  text-color: '#575859'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1

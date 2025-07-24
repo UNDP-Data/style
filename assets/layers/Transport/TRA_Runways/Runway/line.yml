@@ -1,0 +1,26 @@
+id: Transport/TRA_Runways/Runway/line
+type: line
+source: esri
+source-layer: TRA_Runways
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 11
+layout:
+  line-cap: square
+  line-join: round
+paint:
+  line-color: '#80667D'
+  line-width:
+    stops:
+      - - 12
+        - 4
+      - - 14
+        - 10.6667
+      - - 16
+        - 29.3333
+      - - 18
+        - 91.6667
+      - - 19
+        - 244.444

@@ -1,0 +1,20 @@
+id: Landuse/LND_Natural_L/Grass/line
+type: line
+source: esri
+source-layer: LND_Natural_L
+filter:
+  - ==
+  - _symbol
+  - 2
+minzoom: 13
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#D1DBBF'
+  line-width:
+    stops:
+      - - 13
+        - 0
+      - - 17
+        - 2

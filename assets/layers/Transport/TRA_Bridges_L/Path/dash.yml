@@ -1,0 +1,26 @@
+id: Transport/TRA_Bridges_L/Path/dash
+type: line
+source: esri
+source-layer: TRA_Bridges_L
+filter:
+  - ==
+  - _symbol
+  - 4
+minzoom: 14
+layout:
+  line-join: round
+paint:
+  line-color: '#E7E7E7'
+  line-dasharray:
+    - 0.444444
+    - 0.444444
+  line-width:
+    stops:
+      - - 13
+        - 0.66
+      - - 15
+        - 1.33
+      - - 17
+        - 4
+      - - 19
+        - 14

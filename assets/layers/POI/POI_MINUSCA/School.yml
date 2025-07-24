@@ -1,0 +1,44 @@
+id: POI/POI_MINUSCA/School
+type: symbol
+source: esri
+source-layer: POI_MINUSCA
+filter:
+  - ==
+  - _symbol
+  - 12
+minzoom: 13
+layout:
+  icon-image: POI_School
+  icon-size:
+    stops:
+      - - 14
+        - 0.8
+      - - 16
+        - 1
+  text-font:
+    - Noto Sans Display Medium
+  text-size: 9.33333
+  text-anchor: top
+  text-offset:
+    - 0
+    - 0.75
+  text-padding: 1
+  text-field: '{_name3}'
+  text-optional: true
+paint:
+  icon-color: '#386090'
+  text-color: '#386090'
+  icon-opacity:
+    stops:
+      - - 13
+        - 0
+      - - 14
+        - 1
+  text-opacity:
+    stops:
+      - - 14
+        - 0
+      - - 15
+        - 1
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

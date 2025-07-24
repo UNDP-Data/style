@@ -1,0 +1,26 @@
+id: Landuse/LND_Natural_S/Farmland/fill
+type: fill
+source: esri
+source-layer: LND_Natural_S
+filter:
+  - ==
+  - _symbol
+  - 2
+minzoom: 7
+maxzoom: 9
+layout: {}
+paint:
+  fill-opacity:
+    stops:
+      - - 7
+        - 0
+      - - 8
+        - 1
+      - - 9
+        - 0
+  fill-color:
+    stops:
+      - - 8
+        - '#F2F1E3'
+      - - 9
+        - '#F2F2DC'

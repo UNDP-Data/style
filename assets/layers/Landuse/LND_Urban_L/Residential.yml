@@ -1,0 +1,12 @@
+id: Landuse/LND_Urban_L/Residential
+type: fill
+source: esri
+source-layer: LND_Urban_L
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 10
+layout: {}
+paint:
+  fill-color: '#EDE6E6'

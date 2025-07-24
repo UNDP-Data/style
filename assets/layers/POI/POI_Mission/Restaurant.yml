@@ -1,0 +1,32 @@
+id: POI/POI_Mission/Restaurant
+type: symbol
+source: esri
+source-layer: POI_Mission
+filter:
+  - ==
+  - _symbol
+  - 31
+minzoom: 15.85
+layout:
+  icon-image: POI_Restaurant
+  icon-size:
+    stops:
+      - - 16
+        - 1
+      - - 17
+        - 1
+  text-font:
+    - Noto Sans Display Medium
+  text-size: 9.33333
+  text-anchor: top
+  text-offset:
+    - 0
+    - 0.75
+  text-padding: 1
+  text-field: '{_name10}'
+  text-optional: true
+paint:
+  icon-color: '#386090'
+  text-color: '#386090'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

@@ -1,0 +1,17 @@
+id: Transport/TRA_Tunnels_L/label/Minor
+type: symbol
+source: esri
+source-layer: TRA_Tunnels_L/label
+minzoom: 15
+layout:
+  symbol-placement: line
+  symbol-spacing: 1000
+  text-font:
+    - Noto Sans Display Regular
+  text-size: 9.33333
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  text-color: '#828282'
+  text-halo-color: rgba(255,255,255,0.7)
+  text-halo-width: 1.33333

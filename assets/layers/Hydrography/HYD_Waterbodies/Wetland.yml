@@ -1,0 +1,11 @@
+id: Hydrography/HYD_Waterbodies/Wetland
+type: fill
+source: esri
+source-layer: HYD_Waterbodies
+filter:
+  - ==
+  - _symbol
+  - 1
+layout: {}
+paint:
+  fill-pattern: HYD_Wetland

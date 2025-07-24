@@ -1,0 +1,15 @@
+id: Admin/ADM_Boundaries_L_HQ/Sovereign/line
+type: line
+source: esri
+source-layer: ADM_Boundaries_L_HQ
+filter:
+  - ==
+  - _symbol
+  - 4
+minzoom: 5.89
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#9C9C9C'
+  line-width: 1

@@ -1,0 +1,25 @@
+id: Transport/TRA_Runways/Taxiway/line
+type: line
+source: esri
+source-layer: TRA_Runways
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 12
+layout:
+  line-join: round
+paint:
+  line-color: '#A685A2'
+  line-width:
+    stops:
+      - - 12
+        - 1.33333
+      - - 14
+        - 4
+      - - 16
+        - 8.2963
+      - - 18
+        - 33.1852
+      - - 19
+        - 66.3704

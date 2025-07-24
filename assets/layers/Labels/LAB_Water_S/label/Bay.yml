@@ -1,0 +1,21 @@
+id: Labels/LAB_Water_S/label/Bay
+type: symbol
+source: esri
+source-layer: LAB_Water_S
+filter:
+  - ==
+  - _label_class1
+  - 1
+minzoom: 2
+maxzoom: 4
+layout:
+  text-font:
+    - Noto Sans Display Medium Italic
+  text-size: 10
+  text-anchor: center
+  text-field: '{_name1}'
+  text-optional: true
+paint:
+  text-color: '#609FBF'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 0.4

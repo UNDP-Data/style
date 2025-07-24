@@ -1,0 +1,30 @@
+id: Transport/TRA_Roads_L/Track/dash
+type: line
+source: esri
+source-layer: TRA_Roads_L
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 13
+layout:
+  line-join: round
+paint:
+  line-color: '#E7E7E7'
+  line-dasharray:
+    - 1.49254
+    - 1.49254
+  line-width:
+    stops:
+      - - 10
+        - 0.33
+      - - 12
+        - 0.5
+      - - 13
+        - 0.75
+      - - 15
+        - 1.5
+      - - 17
+        - 5
+      - - 19
+        - 16

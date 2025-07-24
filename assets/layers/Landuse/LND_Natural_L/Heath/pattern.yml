@@ -1,0 +1,12 @@
+id: Landuse/LND_Natural_L/Heath/pattern
+type: fill
+source: esri
+source-layer: LND_Natural_L
+filter:
+  - ==
+  - _symbol
+  - 4
+minzoom: 12
+layout: {}
+paint:
+  fill-pattern: LND_Heath

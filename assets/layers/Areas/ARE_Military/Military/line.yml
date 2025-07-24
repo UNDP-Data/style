@@ -1,0 +1,21 @@
+id: Areas/ARE_Military/Military/line
+type: line
+source: esri
+source-layer: ARE_Military
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 10
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#D2ACAD'
+  line-width: 0.333333
+  line-opacity:
+    stops:
+      - - 10
+        - 0
+      - - 11
+        - 1

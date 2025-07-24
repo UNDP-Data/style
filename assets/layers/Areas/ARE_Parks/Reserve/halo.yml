@@ -1,0 +1,14 @@
+id: Areas/ARE_Parks/Reserve/halo
+type: line
+source: esri
+source-layer: ARE_Parks
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 10
+layout:
+  line-join: round
+paint:
+  line-color: rgba(187,235,203,0.3)
+  line-width: 4

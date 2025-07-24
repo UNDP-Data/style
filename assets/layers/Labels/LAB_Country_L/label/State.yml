@@ -1,0 +1,23 @@
+id: Labels/LAB_Country_L/label/State
+type: symbol
+source: esri
+source-layer: LAB_Country_L
+filter:
+  - ==
+  - _label_class
+  - 0
+minzoom: 6
+maxzoom: 7
+layout:
+  text-font:
+    - Open Sans Bold
+  text-max-width: 20
+  text-size: 13.3333
+  text-anchor: center
+  text-letter-spacing: 0.2
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

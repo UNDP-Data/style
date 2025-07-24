@@ -1,0 +1,12 @@
+id: Landuse/LND_Natural_L/Park/fill
+type: fill
+source: esri
+source-layer: LND_Natural_L
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 11
+layout: {}
+paint:
+  fill-color: '#BAE3BA'
