@@ -18,6 +18,7 @@ help:
 	@echo "  aerial         to develop aerial style YAML"
 	@echo "  dark           to develop dark style YAML"
 	@echo "  positron       to develop positron style YAML"
+	@echo "  undp           to develop UNDP Streets style YAML"
 
 build: clean style sprite
 
@@ -28,7 +29,7 @@ clean:
 	@echo "------------------------------------------------------------------"
 	rm -rf docs
 
-style: build-voyager build-aerial build-dark build-positron build-blank
+style: build-voyager build-aerial build-dark build-positron build-blank build-un
 
 build-voyager:
 	@echo
@@ -69,6 +70,14 @@ build-blank:
 	@echo "------------------------------------------------------------------"
 	mkdir -p docs
 	pnpm charites build assets/blank.yml docs/blank.json
+
+build-un:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Building UN Streets style"
+	@echo "------------------------------------------------------------------"
+	mkdir -p docs
+	pnpm charites build assets/un_street_map.yml docs/un_street_map.json
 
 sprite:
 	@echo
@@ -118,3 +127,10 @@ blank:
 	@echo "Launching a local server to edit Blank style"
 	@echo "------------------------------------------------------------------"
 	pnpm charites serve assets/blank.yml --sprite-input $(iconFolder) --sdf
+
+un:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Launching a local server to edit UN Street style"
+	@echo "------------------------------------------------------------------"
+	pnpm charites serve assets/un_street_map.yml --sprite-input $(iconFolder) --sdf
