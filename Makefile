@@ -30,7 +30,7 @@ clean:
 	@echo "------------------------------------------------------------------"
 	rm -rf docs
 
-style: build-voyager build-aerial build-dark build-positron build-blank build-un
+style: build-voyager build-aerial build-dark build-positron build-blank build-unmap
 
 build-voyager:
 	@echo
