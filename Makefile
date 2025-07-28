@@ -13,12 +13,13 @@ help:
 	@echo "  build-aerial   to build only aerial style"
 	@echo "  build-dark     to build only dark style"
 	@echo "  build-positron to build only positron style"
+	@echo "  build-unmap 	to build only UN Streets map style"
 	@echo "  sprite         to build only sprite"
 	@echo "  voyager        to develop voyager style YAML"
 	@echo "  aerial         to develop aerial style YAML"
 	@echo "  dark           to develop dark style YAML"
 	@echo "  positron       to develop positron style YAML"
-	@echo "  undp           to develop UNDP Streets style YAML"
+	@echo "  unmap           	to develop UN Streets map style YAML"
 
 build: clean style sprite
 
@@ -71,13 +72,21 @@ build-blank:
 	mkdir -p docs
 	pnpm charites build assets/blank.yml docs/blank.json
 
-build-un:
+build-unmap:
 	@echo
 	@echo "------------------------------------------------------------------"
 	@echo "Building UN Streets style"
 	@echo "------------------------------------------------------------------"
 	mkdir -p docs
 	pnpm charites build assets/un_street_map.yml docs/un_street_map.json
+
+build-test:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Building UN Streets style"
+	@echo "------------------------------------------------------------------"
+	mkdir -p docs
+	pnpm charites build assets/test_style.yml docs/test_style.json
 
 sprite:
 	@echo
@@ -128,9 +137,16 @@ blank:
 	@echo "------------------------------------------------------------------"
 	pnpm charites serve assets/blank.yml --sprite-input $(iconFolder) --sdf
 
-un:
+unmap:
 	@echo
 	@echo "------------------------------------------------------------------"
 	@echo "Launching a local server to edit UN Street style"
 	@echo "------------------------------------------------------------------"
-	pnpm charites serve assets/un_street_map.yml --sprite-input $(iconFolder) --sdf
+	pnpm charites serve assets/un_street_map.yml
+
+test:
+	@echo
+	@echo "------------------------------------------------------------------"
+	@echo "Launching a local server to edit Test style"
+	@echo "------------------------------------------------------------------"
+	pnpm charites serve assets/test_style.yml --sprite-input $(iconFolder) --sdf

@@ -1,15 +1,32 @@
 version: 8
+name: UN Street Map
+metadata: {}
 sprite: https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Unite_StreetMapVT_CVW_V01/VectorTileServer/resources/sprites/sprite_S
 glyphs: https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Unite_StreetMapVT_CVW_V01/VectorTileServer/resources/fonts/{fontstack}/{range}.pbf
 sources:
   esri:
     type: vector
+    attribution: '&copy; UN Street Map (UN)'
     tiles:
       - https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Unite_StreetMapVT_CVW_V01/VectorTileServer/tile/{z}/{y}/{x}.pbf
     minzoom: 0
     maxzoom: 23
+  terrarium:
+    type: raster-dem
+    attribution: '&copy; <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noopener">Tilezen Joerd</a>'
+    tiles:
+      - https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png
+    minzoom: 0
+    maxzoom: 15
+    tileSize: 256
+    encoding: terrarium
+    bounds:
+      - -180
+      - -90
+      - 180
+      - 90
 layers:
-  - !!inc/file layers/background.yml
+  - !!inc/file layers/hillshade.yml
   - !!inc/file un_street_map/Landuse/LND_Landcover_S/Forest.yml
   - !!inc/file un_street_map/Landuse/LND_Landcover_S/Grassland.yml
   - !!inc/file un_street_map/Landuse/LND_Landcover_M/Forest.yml
