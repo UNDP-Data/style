@@ -1,0 +1,18 @@
+id: Landuse/LND_Natural_L/Orchard/fill
+type: fill
+source: esri
+source-layer: LND_Natural_L
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 11
+layout: {}
+paint:
+  fill-opacity:
+    stops:
+      - - 11
+        - 0
+      - - 12
+        - 1
+  fill-color: '#E1EDC9'

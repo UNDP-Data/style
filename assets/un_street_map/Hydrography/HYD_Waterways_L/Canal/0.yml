@@ -1,0 +1,22 @@
+id: Hydrography/HYD_Waterways_L/Canal/0
+type: line
+source: esri
+source-layer: HYD_Waterways_L
+filter:
+  - ==
+  - _symbol
+  - 2
+minzoom: 13
+layout:
+  line-join: round
+paint:
+  line-color: '#C7E4F2'
+  line-dasharray:
+    - 2.66667
+    - 2
+  line-width:
+    stops:
+      - - 11.53
+        - 0.666667
+      - - 18.17
+        - 2.66667

@@ -1,0 +1,15 @@
+id: Admin/ADM_Boundaries_L_HQ/International/halo
+type: line
+source: esri
+source-layer: ADM_Boundaries_L_HQ
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 5.89
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: rgba(230,230,223,0.65)
+  line-width: 4.26667

@@ -1,0 +1,21 @@
+id: Transport/TRA_Railways/Rail/line
+type: line
+source: esri
+source-layer: TRA_Railways
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 10
+layout:
+  line-join: round
+paint:
+  line-color: '#80667D'
+  line-width:
+    stops:
+      - - 13
+        - 0.11
+      - - 16
+        - 0.44
+      - - 19
+        - 0.88

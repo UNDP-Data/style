@@ -1,0 +1,23 @@
+id: Hydrography/HYD_Waterways_L/Drain/0
+type: symbol
+source: esri
+source-layer: HYD_Waterways_L
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 13
+layout:
+  symbol-placement: line
+  icon-image: HYD_Drain
+  icon-size:
+    stops:
+      - - 11.53
+        - 1
+      - - 18.17
+        - 3
+  symbol-spacing: 4
+  icon-rotation-alignment: map
+  icon-allow-overlap: true
+paint:
+  icon-color: '#C7E4F2'

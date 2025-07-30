@@ -1,0 +1,14 @@
+id: Landuse/LND_Transport_A/fill
+type: fill
+source: esri
+source-layer: LND_Transport_A
+minzoom: 7
+layout: {}
+paint:
+  fill-opacity:
+    stops:
+      - - 7
+        - 0
+      - - 8
+        - 1
+  fill-color: '#E9DCE7'

@@ -1,0 +1,27 @@
+id: Places/PPL_Capitals/label/L07_TO
+type: symbol
+source: esri
+source-layer: PPL_Capitals
+filter:
+  - ==
+  - _label_class8
+  - 8
+minzoom: 6
+maxzoom: 7
+layout:
+  text-font:
+    - Noto Sans Bold
+  text-size: 11.3333
+  text-anchor: bottom
+  text-offset:
+    - 0
+    - -0.7
+  text-padding: 0
+  text-max-width: 15
+  text-field: '{_name8}'
+  text-allow-overlap: true
+  text-optional: true
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

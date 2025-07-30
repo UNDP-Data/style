@@ -1,0 +1,37 @@
+id: Transport/TRA_Roads_L/Tertiary/line
+type: line
+source: esri
+source-layer: TRA_Roads_L
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 8
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color:
+    stops:
+      - - 12
+        - '#BAA6AB'
+      - - 13
+        - '#DDD1D4'
+  line-width:
+    stops:
+      - - 6
+        - 0.45
+      - - 8
+        - 0.6
+      - - 10
+        - 0.75
+      - - 12
+        - 1
+      - - 13
+        - 1.5
+      - - 15
+        - 3
+      - - 17
+        - 8
+      - - 19
+        - 20

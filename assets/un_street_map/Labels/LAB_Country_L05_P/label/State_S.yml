@@ -1,0 +1,24 @@
+id: Labels/LAB_Country_L05_P/label/State_S
+type: symbol
+source: esri
+source-layer: LAB_Country_L05_P
+filter:
+  - ==
+  - _label_class2
+  - 2
+minzoom: 4
+maxzoom: 5
+layout:
+  text-font:
+    - Open Sans Bold
+  text-max-width: 30
+  text-size: 11
+  text-anchor: center
+  text-letter-spacing: 0.15
+  text-field: '{_name2}'
+  text-allow-overlap: true
+  text-optional: true
+paint:
+  text-color: '#636566'
+  text-halo-color: rgba(255,255,255,0.5)
+  text-halo-width: 1

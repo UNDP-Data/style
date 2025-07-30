@@ -1,0 +1,17 @@
+id: Hydrography/HYD_Waterways_M
+type: line
+source: esri
+source-layer: HYD_Waterways_M
+minzoom: 7.21
+maxzoom: 10.53
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#C7E4F2'
+  line-width:
+    stops:
+      - - 7.21
+        - 1
+      - - 10.53
+        - 1.33333

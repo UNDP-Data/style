@@ -1,0 +1,22 @@
+id: Landuse/LND_Landcover_S/Forest
+type: fill
+source: esri
+source-layer: LND_Landcover_S
+filter:
+  - ==
+  - _symbol
+  - 0
+maxzoom: 6
+layout: {}
+paint:
+  fill-opacity:
+    stops:
+      - - 0
+        - 0
+      - - 2
+        - 1
+      - - 5
+        - 1
+      - - 6
+        - 0
+  fill-color: '#DAEDD0'

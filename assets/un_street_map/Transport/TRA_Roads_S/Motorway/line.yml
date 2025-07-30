@@ -1,0 +1,41 @@
+id: Transport/TRA_Roads_S/Motorway/line
+type: line
+source: esri
+source-layer: TRA_Roads_S
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 4
+maxzoom: 8
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#CC3D61'
+  line-width:
+    stops:
+      - - 4
+        - 0.15
+      - - 6
+        - 0.9
+      - - 8
+        - 1.2
+      - - 10
+        - 1.5
+      - - 12
+        - 2
+      - - 13
+        - 3
+      - - 15
+        - 6
+      - - 17
+        - 14
+      - - 19
+        - 32
+  line-opacity:
+    stops:
+      - - 7
+        - 1
+      - - 8
+        - 0

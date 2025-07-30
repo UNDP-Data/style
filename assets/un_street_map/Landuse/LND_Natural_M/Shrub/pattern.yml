@@ -1,0 +1,12 @@
+id: Landuse/LND_Natural_M/Shrub/pattern
+type: fill
+source: esri
+source-layer: LND_Natural_M
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 12
+layout: {}
+paint:
+  fill-pattern: LND_Shrub

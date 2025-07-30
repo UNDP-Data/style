@@ -1,0 +1,20 @@
+id: Hydrography/HYD_Waterways_L/River/outline
+type: line
+source: esri
+source-layer: HYD_Waterways_L
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 10.53
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#B6DEF2'
+  line-width:
+    stops:
+      - - 11.53
+        - 2
+      - - 18.17
+        - 6.66667

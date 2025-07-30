@@ -1,0 +1,22 @@
+id: Transport/TRA_Railways/Light/dash
+type: line
+source: esri
+source-layer: TRA_Railways
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 13
+layout:
+  line-join: round
+paint:
+  line-color: '#80667D'
+  line-dasharray:
+    - 0.215517
+    - 3.44828
+  line-width:
+    stops:
+      - - 16
+        - 1.54667
+      - - 19
+        - 3.09333

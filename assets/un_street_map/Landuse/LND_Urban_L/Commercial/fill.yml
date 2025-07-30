@@ -1,0 +1,12 @@
+id: Landuse/LND_Urban_L/Commercial/fill
+type: fill
+source: esri
+source-layer: LND_Urban_L
+filter:
+  - ==
+  - _symbol
+  - 2
+minzoom: 10
+layout: {}
+paint:
+  fill-color: '#ECE0CF'

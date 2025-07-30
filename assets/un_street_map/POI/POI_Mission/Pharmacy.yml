@@ -1,0 +1,32 @@
+id: POI/POI_Mission/Pharmacy
+type: symbol
+source: esri
+source-layer: POI_Mission
+filter:
+  - ==
+  - _symbol
+  - 34
+minzoom: 14.85
+layout:
+  icon-image: POI_Pharmacy
+  icon-size:
+    stops:
+      - - 15
+        - 0.8
+      - - 16
+        - 1
+  text-font:
+    - Noto Sans Display Medium
+  text-size: 9.33333
+  text-anchor: top
+  text-offset:
+    - 0
+    - 0.75
+  text-padding: 1
+  text-field: '{_name7}'
+  text-optional: true
+paint:
+  icon-color: '#448970'
+  text-color: '#448970'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

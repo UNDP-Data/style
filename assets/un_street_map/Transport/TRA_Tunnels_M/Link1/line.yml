@@ -1,0 +1,35 @@
+id: Transport/TRA_Tunnels_M/Link1/line
+type: line
+source: esri
+source-layer: TRA_Tunnels_M
+filter:
+  - ==
+  - _symbol
+  - 2
+minzoom: 9
+layout:
+  line-join: round
+paint:
+  line-color:
+    stops:
+      - - 12
+        - '#CC3D61'
+      - - 13
+        - '#ffffff'
+  line-width:
+    stops:
+      - - 8
+        - 0.4
+      - - 10
+        - 0.5
+      - - 12
+        - 0.66
+      - - 13
+        - 1
+      - - 15
+        - 2
+      - - 17
+        - 6
+      - - 19
+        - 18
+  line-opacity: 0.25

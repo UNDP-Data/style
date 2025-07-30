@@ -1,0 +1,28 @@
+id: Transport/TRA_Roads_M/label/Motorway_Shield
+type: symbol
+source: esri
+source-layer: TRA_Roads_M/label
+filter:
+  - ==
+  - _label_class
+  - 0
+minzoom: 8
+maxzoom: 13
+layout:
+  symbol-placement: line
+  symbol-spacing: 1024
+  symbol-avoid-edges: true
+  text-font:
+    - Noto Sans Display Bold
+  text-size: 7
+  text-offset:
+    - -0.1
+    - -0.1
+  text-field: '{_name}'
+  icon-text-fit: width
+  icon-image: TRA_Motorway/{_len}
+  icon-size: 0.8
+  icon-rotation-alignment: viewport
+  text-rotation-alignment: viewport
+paint:
+  text-color: '#FFFFFF'

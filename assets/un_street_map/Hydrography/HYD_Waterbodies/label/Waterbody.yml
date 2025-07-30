@@ -1,0 +1,20 @@
+id: Hydrography/HYD_Waterbodies/label/Waterbody
+type: symbol
+source: esri
+source-layer: HYD_Waterbodies/label
+filter:
+  - ==
+  - _label_class
+  - 0
+minzoom: 5
+layout:
+  text-font:
+    - Noto Sans Display Medium Italic
+  text-size: 10.6667
+  text-letter-spacing: 0.15
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  text-color: '#3D9CCC'
+  text-halo-color: rgba(255,255,255,0.5)
+  text-halo-width: 1.33333

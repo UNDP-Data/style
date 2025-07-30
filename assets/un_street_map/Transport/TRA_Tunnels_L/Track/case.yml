@@ -1,0 +1,33 @@
+id: Transport/TRA_Tunnels_L/Track/case
+type: line
+source: esri
+source-layer: TRA_Tunnels_L
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 11
+layout:
+  line-join: round
+paint:
+  line-color:
+    stops:
+      - - 12
+        - rgba(255,255,255,0.75)
+      - - 13
+        - '#C6C6C6'
+  line-width:
+    stops:
+      - - 10
+        - 0.5
+      - - 12
+        - 0.75
+      - - 13
+        - 1.5
+      - - 15
+        - 3
+      - - 17
+        - 7
+      - - 19
+        - 19
+  line-opacity: 0.5

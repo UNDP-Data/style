@@ -1,0 +1,27 @@
+id: Places/PPL_Capitals/label/L06_LE
+type: symbol
+source: esri
+source-layer: PPL_Capitals
+filter:
+  - ==
+  - _label_class7
+  - 7
+minzoom: 5
+maxzoom: 6
+layout:
+  text-font:
+    - Noto Sans Regular
+  text-size: 10
+  text-anchor: right
+  text-offset:
+    - -0.8
+    - 0
+  text-padding: 0
+  text-max-width: 15
+  text-field: '{_name7}'
+  text-allow-overlap: true
+  text-optional: true
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

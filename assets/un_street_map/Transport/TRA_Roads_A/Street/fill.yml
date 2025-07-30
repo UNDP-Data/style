@@ -1,0 +1,12 @@
+id: Transport/TRA_Roads_A/Street/fill
+type: fill
+source: esri
+source-layer: TRA_Roads_A
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 12.53
+layout: {}
+paint:
+  fill-color: '#FFFFFF'

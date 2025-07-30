@@ -1,0 +1,20 @@
+id: Transport/TRA_Railways/Light/halo
+type: line
+source: esri
+source-layer: TRA_Railways
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 11
+layout: {}
+paint:
+  line-color: rgba(242,230,241,0.6)
+  line-width:
+    stops:
+      - - 13
+        - 0.666667
+      - - 16
+        - 2
+      - - 19
+        - 4

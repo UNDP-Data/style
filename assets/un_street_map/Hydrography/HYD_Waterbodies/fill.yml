@@ -1,0 +1,11 @@
+id: Hydrography/HYD_Waterbodies/fill
+type: fill
+source: esri
+source-layer: HYD_Waterbodies
+filter:
+  - ==
+  - _symbol
+  - 0
+layout: {}
+paint:
+  fill-color: '#D8EBF5'

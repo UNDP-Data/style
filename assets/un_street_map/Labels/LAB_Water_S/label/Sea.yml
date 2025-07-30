@@ -1,0 +1,21 @@
+id: Labels/LAB_Water_S/label/Sea
+type: symbol
+source: esri
+source-layer: LAB_Water_S
+filter:
+  - ==
+  - _label_class2
+  - 2
+minzoom: 3
+maxzoom: 4
+layout:
+  text-font:
+    - Noto Sans Display Medium Italic
+  text-size: 9.33333
+  text-anchor: center
+  text-field: '{_name2}'
+  text-optional: true
+paint:
+  text-color: '#609FBF'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 0.4

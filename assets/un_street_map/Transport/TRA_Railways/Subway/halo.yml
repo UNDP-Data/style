@@ -1,0 +1,20 @@
+id: Transport/TRA_Railways/Subway/halo
+type: line
+source: esri
+source-layer: TRA_Railways
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 13
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: rgba(242,230,241,0.3)
+  line-width:
+    stops:
+      - - 16
+        - 1.33333
+      - - 19
+        - 4

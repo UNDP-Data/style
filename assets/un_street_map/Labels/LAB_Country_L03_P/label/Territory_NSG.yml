@@ -1,0 +1,24 @@
+id: Labels/LAB_Country_L03_P/label/Territory_NSG
+type: symbol
+source: esri
+source-layer: LAB_Country_L03_P
+filter:
+  - ==
+  - _label_class4
+  - 4
+minzoom: 2
+maxzoom: 3
+layout:
+  text-font:
+    - Open Sans Semibold
+  text-max-width: 20
+  text-size: 7.73333
+  text-anchor: center
+  text-letter-spacing: 0.1
+  text-field: '{_name4}'
+  text-allow-overlap: true
+  text-optional: true
+paint:
+  text-color: '#6E7780'
+  text-halo-color: rgba(255,255,255,0.25)
+  text-halo-width: 0.666667

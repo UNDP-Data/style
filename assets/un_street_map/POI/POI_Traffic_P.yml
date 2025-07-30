@@ -1,0 +1,10 @@
+id: POI/POI_Traffic_P
+type: symbol
+source: esri
+source-layer: POI_Traffic_P
+minzoom: 13.85
+layout:
+  icon-image: POI_Fuel
+  icon-size: 1
+paint:
+  icon-color: '#CC3D61'

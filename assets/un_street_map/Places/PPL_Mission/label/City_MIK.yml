@@ -1,0 +1,24 @@
+id: Places/PPL_Mission/label/City_MIK
+type: symbol
+source: esri
+source-layer: PPL_Mission
+filter:
+  - ==
+  - _label_class7
+  - 7
+minzoom: 7
+maxzoom: 9
+layout:
+  text-font:
+    - Noto Sans Display Medium
+  text-size: 10.6667
+  text-anchor: bottom
+  text-offset:
+    - 0
+    - -0.3
+  text-field: '{_name7}'
+  icon-image: PPL_City
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

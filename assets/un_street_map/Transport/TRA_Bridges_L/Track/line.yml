@@ -1,0 +1,33 @@
+id: Transport/TRA_Bridges_L/Track/line
+type: line
+source: esri
+source-layer: TRA_Bridges_L
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 11
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color:
+    stops:
+      - - 12
+        - '#C6C6C6'
+      - - 13
+        - '#FFFFFF'
+  line-width:
+    stops:
+      - - 10
+        - 0.33
+      - - 12
+        - 0.5
+      - - 13
+        - 0.75
+      - - 15
+        - 1.5
+      - - 17
+        - 5
+      - - 19
+        - 16

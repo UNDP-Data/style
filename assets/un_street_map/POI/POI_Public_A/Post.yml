@@ -1,0 +1,44 @@
+id: POI/POI_Public_A/Post
+type: symbol
+source: esri
+source-layer: POI_Public_A
+filter:
+  - ==
+  - _symbol
+  - 6
+minzoom: 11
+layout:
+  icon-image: POI_Post
+  icon-size:
+    stops:
+      - - 13
+        - 0.8
+      - - 15
+        - 1
+  text-font:
+    - Noto Sans Display Medium
+  text-size: 9.33333
+  text-anchor: top
+  text-offset:
+    - 0
+    - 0.75
+  text-padding: 1
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  icon-color: '#343434'
+  text-color: '#343434'
+  icon-opacity:
+    stops:
+      - - 11
+        - 0
+      - - 12
+        - 1
+  text-opacity:
+    stops:
+      - - 13
+        - 0
+      - - 14
+        - 1
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

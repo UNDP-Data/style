@@ -1,0 +1,27 @@
+id: Places/PPL_Capitals/label/L05_TO
+type: symbol
+source: esri
+source-layer: PPL_Capitals
+filter:
+  - ==
+  - _label_class
+  - 0
+minzoom: 4
+maxzoom: 5
+layout:
+  text-font:
+    - Noto Sans Regular
+  text-size: 9.33333
+  text-anchor: bottom
+  text-offset:
+    - 0
+    - -0.5
+  text-padding: 0
+  text-max-width: 15
+  text-field: '{_name}'
+  text-allow-overlap: true
+  text-optional: true
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1

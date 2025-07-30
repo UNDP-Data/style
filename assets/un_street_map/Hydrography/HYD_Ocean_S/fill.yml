@@ -1,0 +1,8 @@
+id: Hydrography/HYD_Ocean_S/fill
+type: fill
+source: esri
+source-layer: HYD_Ocean_S
+maxzoom: 8.21
+layout: {}
+paint:
+  fill-color: '#D5EBF5'

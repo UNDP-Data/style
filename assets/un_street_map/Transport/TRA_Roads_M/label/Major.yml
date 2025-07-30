@@ -1,0 +1,21 @@
+id: Transport/TRA_Roads_M/label/Major
+type: symbol
+source: esri
+source-layer: TRA_Roads_M/label
+filter:
+  - ==
+  - _label_class
+  - 2
+minzoom: 13
+layout:
+  symbol-placement: line
+  symbol-spacing: 341
+  text-font:
+    - Noto Sans Display Regular
+  text-size: 10.6667
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  text-color: '#4E4E4E'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

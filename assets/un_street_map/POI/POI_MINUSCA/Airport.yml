@@ -1,0 +1,46 @@
+id: POI/POI_MINUSCA/Airport
+type: symbol
+source: esri
+source-layer: POI_MINUSCA
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 7
+layout:
+  icon-image:
+    stops:
+      - - 9
+        - POI_Airport_S
+      - - 10
+        - POI_Airport
+  icon-allow-overlap: false
+  icon-size:
+    stops:
+      - - 10
+        - 1
+      - - 11
+        - 1.2
+  text-font:
+    - Noto Sans Display Medium
+  text-size: 11.3333
+  text-anchor: bottom
+  text-offset:
+    - 0
+    - -1.2
+  text-field: '{_name}'
+  text-optional: true
+  text-padding: 0
+  icon-padding: 0
+  icon-optional: false
+paint:
+  icon-color: '#802677'
+  text-opacity:
+    stops:
+      - - 10
+        - 0
+      - - 11
+        - 1
+  text-color: '#802677'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

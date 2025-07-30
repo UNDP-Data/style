@@ -1,0 +1,19 @@
+id: Admin/ADM_Boundaries_M/Armistice/halo
+type: line
+source: esri
+source-layer: ADM_Boundaries_M
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 3.89
+maxzoom: 5.89
+layout: {}
+paint:
+  line-color: rgba(230,227,223,0.65)
+  line-width:
+    stops:
+      - - 4
+        - 2.66667
+      - - 5
+        - 4

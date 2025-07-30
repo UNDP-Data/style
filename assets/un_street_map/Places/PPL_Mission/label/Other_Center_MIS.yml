@@ -1,0 +1,20 @@
+id: Places/PPL_Mission/label/Other_Center_MIS
+type: symbol
+source: esri
+source-layer: PPL_Mission
+filter:
+  - ==
+  - _label_class5
+  - 5
+minzoom: 12
+layout:
+  text-font:
+    - Noto Sans Display Regular
+  text-size: 9.33333
+  text-anchor: center
+  text-field: '{_name5}'
+  text-optional: true
+paint:
+  text-color: '#656565'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

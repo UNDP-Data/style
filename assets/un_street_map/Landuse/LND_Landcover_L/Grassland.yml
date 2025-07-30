@@ -1,0 +1,18 @@
+id: Landuse/LND_Landcover_L/Grassland
+type: fill
+source: esri
+source-layer: LND_Landcover_L
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 9
+layout: {}
+paint:
+  fill-opacity:
+    stops:
+      - - 9
+        - 0
+      - - 10
+        - 1
+  fill-color: '#ECF3DD'
