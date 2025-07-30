@@ -1,6 +1,13 @@
 version: 8
 name: Dark Matter
 sources:
+  esri:
+    attribution: '&copy; <a href="https://www.esri.com/en-us/home" target="_blank" rel="noopener">Esri</a> | United Nations'
+    type: vector
+    tiles:
+      - https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Unite_StreetMapVT_CVW_V01/VectorTileServer/tile/{z}/{y}/{x}.pbf
+    minzoom: 0
+    maxzoom: 23
   carto:
     type: vector
     url: https://tiles.basemaps.cartocdn.com/vector/carto.streets/v1/tiles.json
@@ -18,7 +25,12 @@ sources:
       - -90
       - 180
       - 90
-sprite: ./sprite/sprite
+sprite:
+  - id: undp
+    url: ./sprite/sprite
+  - id: default
+    url: https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Unite_StreetMapVT_CVW_V01/VectorTileServer/resources/sprites/sprite_S
+
 glyphs: https://fonts.undpgeohub.org/fonts/{fontstack}/{range}.pbf
 layers:
   - !!inc/file dark/background.yml
@@ -29,8 +41,6 @@ layers:
   - !!inc/file dark/landuse_residential.yml
   - !!inc/file dark/landuse.yml
   - !!inc/file dark/waterway.yml
-  - !!inc/file dark/boundary_county.yml
-  - !!inc/file dark/boundary_state.yml
   - !!inc/file dark/water.yml
   - !!inc/file dark/water_shadow.yml
   - !!inc/file dark/aeroway-runway.yml
@@ -86,8 +96,6 @@ layers:
   - !!inc/file dark/bridge_mot_fill.yml
   - !!inc/file dark/building.yml
   - !!inc/file dark/building-top.yml
-  - !!inc/file dark/boundary_country_outline.yml
-  - !!inc/file dark/boundary_country_inner.yml
   - !!inc/file dark/waterway_label.yml
   - !!inc/file dark/watername_ocean.yml
   - !!inc/file dark/watername_sea.yml
@@ -115,5 +123,45 @@ layers:
   - !!inc/file dark/roadname_pri.yml
   - !!inc/file dark/roadname_major.yml
   - !!inc/file dark/housenumber.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Sovereign/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/International/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Armistice/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Special/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Other/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Autonomous/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_MMR/International/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_VMC/International/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_M/Other/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_M/Armistice/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_M/Special/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_M/International/halo.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_MMR/Admin 4/0.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_MMR/Admin 3/0.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_VMC/Admin3.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_MMR/Admin 2.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_VMC/Admin2.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_MIK/Admin2.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_NoHQ/Admin2.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Admin2.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_MMR/Admin 1.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_VMC/Admin1.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_NoHQ/Admin1.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Admin1.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Sovereign/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Autonomous/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Other/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Armistice/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Special/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_MMR/International boundary/0.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_VMC/International/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/International/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_M/Other/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_M/Armistice/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_M/Special/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_M/International/line.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_S/Other.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_S/Armistice.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_S/Special.yml
+  - !!inc/file un_street_map/Admin/ADM_Boundaries_S/International.yml
 id: voyager
 owner: Carto
