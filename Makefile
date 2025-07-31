@@ -80,14 +80,6 @@ build-unmap:
 	mkdir -p docs
 	pnpm charites build assets/un_street_map.yml docs/un_street_map.json
 
-build-test:
-	@echo
-	@echo "------------------------------------------------------------------"
-	@echo "Building UN Streets style"
-	@echo "------------------------------------------------------------------"
-	mkdir -p docs
-	pnpm charites build assets/test_style.yml docs/test_style.json
-
 sprite:
 	@echo
 	@echo "------------------------------------------------------------------"
@@ -143,10 +135,3 @@ unmap:
 	@echo "Launching a local server to edit UN Street style"
 	@echo "------------------------------------------------------------------"
 	pnpm charites serve assets/un_street_map.yml
-
-test:
-	@echo
-	@echo "------------------------------------------------------------------"
-	@echo "Launching a local server to edit Test style"
-	@echo "------------------------------------------------------------------"
-	pnpm charites serve assets/test_style.yml --sprite-input $(iconFolder) --sdf
