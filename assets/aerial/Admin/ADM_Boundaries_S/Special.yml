@@ -1,0 +1,30 @@
+id: Admin/ADM_Boundaries_S/Special
+type: line
+source: esri
+source-layer: ADM_Boundaries_S
+filter:
+  - ==
+  - _symbol
+  - 2
+maxzoom: 4
+layout:
+  line-join: round
+paint:
+  line-color: '#c9c9c9'
+  line-dasharray:
+    - 2
+    - 2
+  line-width:
+    stops:
+      - - 1
+        - 0.333333
+      - - 2
+        - 0.5
+      - - 3
+        - 0.8
+  line-opacity:
+    stops:
+      - - 3
+        - 1
+      - - 4
+        - 0

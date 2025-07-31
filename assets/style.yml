@@ -5,6 +5,13 @@ sources:
   carto:
     type: vector
     url: https://tiles.basemaps.cartocdn.com/vector/carto.streets/v1/tiles.json
+  esri:
+    type: vector
+    attribution: '&copy; <a href="https://www.un.org/geospatial/mapsgeo" target="_blank" rel="noopener">United Nations</a>'
+    tiles:
+      - https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Unite_StreetMapVT_CVW_V01/VectorTileServer/tile/{z}/{y}/{x}.pbf
+    minzoom: 0
+    maxzoom: 23
   terrarium:
     type: raster-dem
     attribution: '&copy; <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noopener">Tilezen Joerd</a>'
@@ -19,7 +26,11 @@ sources:
       - -90
       - 180
       - 90
-sprite: ./sprite/sprite
+sprite:
+  - id: undp
+    url: ./sprite/sprite
+  - id: default
+    url: https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Unite_StreetMapVT_CVW_V01/VectorTileServer/resources/sprites/sprite_S
 glyphs: https://fonts.undpgeohub.org/fonts/{fontstack}/{range}.pbf
 layers:
   - !!inc/file layers/background.yml
@@ -30,8 +41,8 @@ layers:
   - !!inc/file layers/landuse_residential.yml
   - !!inc/file layers/landuse.yml
   - !!inc/file layers/waterway.yml
-  - !!inc/file layers/boundary_county.yml
-  - !!inc/file layers/boundary_state.yml
+  # - !!inc/file layers/boundary_county.yml
+  # - !!inc/file layers/boundary_state.yml
   - !!inc/file layers/water.yml
   - !!inc/file layers/water_shadow.yml
   - !!inc/file layers/aeroway-runway.yml
@@ -87,8 +98,56 @@ layers:
   - !!inc/file layers/bridge_mot_fill.yml
   - !!inc/file layers/building.yml
   - !!inc/file layers/building-top.yml
-  - !!inc/file layers/boundary_country_outline.yml
-  - !!inc/file layers/boundary_country_inner.yml
+
+  # UN addmin boundaries
+  # ADM_Boundaries_L_HQ: z 5-
+  # ADM_Boundaries_M: z 4
+  # ADM_Boundaries_S: z 0-3
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Sovereign/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/International/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Armistice/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Special/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Other/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Autonomous/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_MMR/International/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_VMC/International/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_M/Other/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_M/Armistice/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_M/Special/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_M/International/halo.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_MMR/Admin 4/0.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_MMR/Admin 3/0.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_VMC/Admin3.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_MMR/Admin 2.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_VMC/Admin2.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_MIK/Admin2.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_NoHQ/Admin2.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Admin2.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_MMR/Admin 1.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_VMC/Admin1.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_NoHQ/Admin1.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Admin1.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Sovereign/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Autonomous/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Other/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Armistice/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/Special/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_MMR/International boundary/0.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_VMC/International/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_L_HQ/International/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_M/Other/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_M/Armistice/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_M/Special/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_M/International/line.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_S/Other.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_S/Armistice.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_S/Special.yml
+  - !!inc/file layers/Admin/ADM_Boundaries_S/International.yml
+
+  # carto style layers
+  # - !!inc/file layers/boundary_country_outline.yml
+  # - !!inc/file layers/boundary_country_inner.yml
+
   - !!inc/file layers/waterway_label.yml
   - !!inc/file layers/watername_ocean.yml
   - !!inc/file layers/watername_sea.yml
