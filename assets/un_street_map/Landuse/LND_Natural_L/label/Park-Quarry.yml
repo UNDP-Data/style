@@ -1,0 +1,15 @@
+id: Landuse/LND_Natural_L/label/Park-Quarry
+type: symbol
+source: esri
+source-layer: LND_Natural_L/label
+minzoom: 13
+layout:
+  text-font:
+    - Noto Sans Display Regular
+  text-size: 10.6667
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  text-color: rgba(0,0,0,0.7)
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.13333

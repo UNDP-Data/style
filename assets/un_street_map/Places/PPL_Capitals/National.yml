@@ -1,0 +1,22 @@
+id: Places/PPL_Capitals/National
+type: symbol
+source: esri
+source-layer: PPL_Capitals
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 4
+maxzoom: 11.53
+layout:
+  icon-image: PPL_National
+  icon-size:
+    stops:
+      - - 4
+        - 0.75
+      - - 6
+        - 1
+      - - 7
+        - 0
+  icon-allow-overlap: true
+paint: {}

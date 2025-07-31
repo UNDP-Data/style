@@ -1,0 +1,20 @@
+id: Places/PPL_Mission/label/Town_Center_MIL
+type: symbol
+source: esri
+source-layer: PPL_Mission
+filter:
+  - ==
+  - _label_class15
+  - 15
+minzoom: 12
+maxzoom: 16
+layout:
+  text-font:
+    - Noto Sans Display Medium
+  text-size: 10.6667
+  text-anchor: center
+  text-field: '{_name15}'
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

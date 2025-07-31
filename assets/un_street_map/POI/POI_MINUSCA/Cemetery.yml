@@ -1,0 +1,32 @@
+id: POI/POI_MINUSCA/Cemetery
+type: symbol
+source: esri
+source-layer: POI_MINUSCA
+filter:
+  - ==
+  - _symbol
+  - 14
+minzoom: 15
+layout:
+  icon-image: POI_Memorial
+  icon-size:
+    stops:
+      - - 15
+        - 0.8
+      - - 16
+        - 1
+  text-font:
+    - Noto Sans Display Medium
+  text-size: 9.33333
+  text-anchor: top
+  text-offset:
+    - 0
+    - 0.75
+  text-padding: 1
+  text-field: '{_name4}'
+  text-optional: true
+paint:
+  icon-color: '#894444'
+  text-color: '#894444'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

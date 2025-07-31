@@ -1,0 +1,20 @@
+id: Places/PPL_Mission/label/Town_Center_MIS
+type: symbol
+source: esri
+source-layer: PPL_Mission
+filter:
+  - ==
+  - _label_class3
+  - 3
+minzoom: 11
+maxzoom: 15
+layout:
+  text-font:
+    - Noto Sans Display Medium
+  text-size: 10.6667
+  text-anchor: center
+  text-field: '{_name3}'
+paint:
+  text-color: '#343434'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

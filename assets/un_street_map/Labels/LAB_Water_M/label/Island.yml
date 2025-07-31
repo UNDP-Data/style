@@ -1,0 +1,20 @@
+id: Labels/LAB_Water_M/label/Island
+type: symbol
+source: esri
+source-layer: LAB_Water_M
+filter:
+  - ==
+  - _label_class3
+  - 3
+minzoom: 5
+layout:
+  text-font:
+    - Noto Sans Display SemiBold Italic
+  text-size: 9.33333
+  text-anchor: center
+  text-field: '{_name3}'
+  text-optional: true
+paint:
+  text-color: rgba(113,126,133,0.75)
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 0.4

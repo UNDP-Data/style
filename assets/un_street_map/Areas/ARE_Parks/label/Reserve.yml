@@ -1,0 +1,15 @@
+id: Areas/ARE_Parks/label/Reserve
+type: symbol
+source: esri
+source-layer: ARE_Parks/label
+minzoom: 8
+layout:
+  text-font:
+    - Noto Sans Display Regular
+  text-size: 10.6667
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  text-color: '#8BAD90'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.13333

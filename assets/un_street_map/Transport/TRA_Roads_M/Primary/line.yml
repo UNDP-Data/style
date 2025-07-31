@@ -1,0 +1,45 @@
+id: Transport/TRA_Roads_M/Primary/line
+type: line
+source: esri
+source-layer: TRA_Roads_M
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 7
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-opacity:
+    stops:
+      - - 7
+        - 0
+      - - 8
+        - 1
+  line-color:
+    stops:
+      - - 12
+        - '#CC7A8F'
+      - - 13
+        - '#D7AEB8'
+  line-width:
+    stops:
+      - - 4
+        - 0.1
+      - - 6
+        - 0.6
+      - - 8
+        - 0.8
+      - - 10
+        - 1
+      - - 12
+        - 1.33
+      - - 13
+        - 2
+      - - 15
+        - 4
+      - - 17
+        - 10
+      - - 19
+        - 24

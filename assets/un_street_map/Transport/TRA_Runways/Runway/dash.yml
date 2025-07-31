@@ -1,0 +1,24 @@
+id: Transport/TRA_Runways/Runway/dash
+type: line
+source: esri
+source-layer: TRA_Runways
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 15.85
+layout:
+  line-join: round
+paint:
+  line-color: '#FFFFFF'
+  line-dasharray:
+    - 5
+    - 5
+  line-width:
+    stops:
+      - - 16
+        - 1.33333
+      - - 18
+        - 4.16667
+      - - 19
+        - 11.1111

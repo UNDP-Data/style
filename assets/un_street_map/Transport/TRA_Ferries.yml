@@ -1,0 +1,19 @@
+id: Transport/TRA_Ferries
+type: symbol
+source: esri
+source-layer: TRA_Ferries
+minzoom: 7
+layout:
+  symbol-placement: line
+  icon-image: TRA_Ferries
+  symbol-spacing: 4
+  icon-rotation-alignment: map
+  icon-allow-overlap: true
+paint:
+  icon-opacity:
+    stops:
+      - - 7
+        - 0
+      - - 11
+        - 1
+  icon-color: '#3D9CCC'

@@ -1,0 +1,23 @@
+id: Transport/TRA_Roads_A/Path/line
+type: line
+source: esri
+source-layer: TRA_Roads_A
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 13.85
+layout:
+  line-join: round
+paint:
+  line-color: '#FFFFFF'
+  line-width:
+    stops:
+      - - 13
+        - 0.66
+      - - 15
+        - 1.33
+      - - 17
+        - 4
+      - - 19
+        - 14

@@ -1,0 +1,16 @@
+id: Landuse/LND_Transport_A/line
+type: line
+source: esri
+source-layer: LND_Transport_A
+minzoom: 8
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: rgba(130,130,130,0.3)
+  line-width:
+    stops:
+      - - 8
+        - 0
+      - - 13
+        - 1

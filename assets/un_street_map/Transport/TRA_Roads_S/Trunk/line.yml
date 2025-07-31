@@ -1,0 +1,41 @@
+id: Transport/TRA_Roads_S/Trunk/line
+type: line
+source: esri
+source-layer: TRA_Roads_S
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 4
+maxzoom: 8
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#CC3D61'
+  line-width:
+    stops:
+      - - 4
+        - 0.1
+      - - 6
+        - 0.6
+      - - 8
+        - 0.8
+      - - 10
+        - 1
+      - - 12
+        - 1.33
+      - - 13
+        - 2
+      - - 15
+        - 4
+      - - 17
+        - 10
+      - - 19
+        - 24
+  line-opacity:
+    stops:
+      - - 7
+        - 1
+      - - 8
+        - 0

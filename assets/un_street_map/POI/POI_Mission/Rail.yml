@@ -1,0 +1,37 @@
+id: POI/POI_Mission/Rail
+type: symbol
+source: esri
+source-layer: POI_Mission
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 12
+layout:
+  icon-image: POI_Rail
+  icon-size:
+    stops:
+      - - 13
+        - 1
+      - - 14
+        - 1.2
+  text-font:
+    - Noto Sans Display Medium
+  text-size: 10.6667
+  text-anchor: bottom
+  text-offset:
+    - 0
+    - -1
+  text-field: '{_name3}'
+  text-optional: true
+paint:
+  icon-color: '#802677'
+  text-opacity:
+    stops:
+      - - 13
+        - 0
+      - - 14
+        - 1
+  text-color: '#802677'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

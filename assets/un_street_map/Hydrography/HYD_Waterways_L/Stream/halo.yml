@@ -1,0 +1,21 @@
+id: Hydrography/HYD_Waterways_L/Stream/halo
+type: line
+source: esri
+source-layer: HYD_Waterways_L
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 11
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: rgba(250,249,246,0.5)
+  line-blur: 1
+  line-width:
+    stops:
+      - - 11.53
+        - 3
+      - - 18.17
+        - 6

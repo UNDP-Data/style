@@ -1,0 +1,28 @@
+id: Landuse/LND_Natural_S/Woodland/fill
+type: fill
+source: esri
+source-layer: LND_Natural_S
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 5
+maxzoom: 9
+layout: {}
+paint:
+  fill-opacity:
+    stops:
+      - - 5
+        - 0
+      - - 6
+        - 1
+      - - 8
+        - 1
+      - - 9
+        - 0
+  fill-color:
+    stops:
+      - - 7
+        - '#DAEDD0'
+      - - 9
+        - '#CFE6C3'

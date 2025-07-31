@@ -1,0 +1,22 @@
+id: Labels/LAB_Country_L/label/Territory
+type: symbol
+source: esri
+source-layer: LAB_Country_L
+filter:
+  - ==
+  - _label_class1
+  - 1
+minzoom: 6
+maxzoom: 7
+layout:
+  text-font:
+    - Open Sans Bold
+  text-size: 13.3333
+  text-anchor: center
+  text-letter-spacing: 0.1
+  text-field: '{_name1}'
+  text-optional: true
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

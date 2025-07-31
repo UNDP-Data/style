@@ -1,0 +1,16 @@
+id: Labels/LAB_Water_L/label/Water
+type: symbol
+source: esri
+source-layer: LAB_Water_L
+minzoom: 6
+layout:
+  text-font:
+    - Noto Sans Display Medium Italic
+  text-size: 9.33333
+  text-anchor: center
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  text-color: '#3D9CCC'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 0.4

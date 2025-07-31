@@ -1,0 +1,23 @@
+id: Labels/LAB_Country_L06_P/label/Autonomies
+type: symbol
+source: esri
+source-layer: LAB_Country_L06_P
+filter:
+  - ==
+  - _label_class7
+  - 7
+minzoom: 5
+maxzoom: 6
+layout:
+  text-font:
+    - Open Sans Regular
+  text-size: 12
+  text-anchor: center
+  text-letter-spacing: 0.05
+  text-field: '{_name7}'
+  text-allow-overlap: true
+  text-optional: true
+paint:
+  text-color: '#575859'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1

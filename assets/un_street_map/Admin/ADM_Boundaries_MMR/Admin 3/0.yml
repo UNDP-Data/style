@@ -1,0 +1,18 @@
+id: Admin/ADM_Boundaries_MMR/Admin 3/0
+type: line
+source: esri
+source-layer: ADM_Boundaries_MMR
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 9.2086
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#CCCCCC'
+  line-dasharray:
+    - 2
+    - 4
+  line-width: 0.666667

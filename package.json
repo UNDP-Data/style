@@ -32,6 +32,10 @@
       "import": "./dist/blank.json",
       "require": "./dist/blank.json"
     },
+    "./dist/un_street_map.json": {
+      "import": "./dist/un_street_map.json",
+      "require": "./dist/un_street_map.json"
+    },
     "./dist/sprite/sprite.json": {
       "import": "./dist/sprite/sprite.json",
       "require": "./dist/sprite/sprite.json"

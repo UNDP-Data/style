@@ -1,0 +1,30 @@
+id: Labels/LAB_Water_M/label/Bay
+type: symbol
+source: esri
+source-layer: LAB_Water_M
+filter:
+  - ==
+  - _label_class1
+  - 1
+minzoom: 4
+layout:
+  text-font:
+    - Noto Sans Display Medium Italic
+  text-size:
+    stops:
+      - - 4
+        - 10
+      - - 7
+        - 12.3333
+  text-anchor: center
+  text-field: '{_name1}'
+  text-optional: true
+paint:
+  text-color:
+    stops:
+      - - 4
+        - '#609FBF'
+      - - 7
+        - '#3D9CCC'
+  text-halo-color: '#FFFFFF'
+  text-halo-width: 0.4

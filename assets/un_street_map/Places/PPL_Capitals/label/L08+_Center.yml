@@ -1,0 +1,22 @@
+id: Places/PPL_Capitals/label/L08+_Center
+type: symbol
+source: esri
+source-layer: PPL_Capitals
+filter:
+  - ==
+  - _label_class12
+  - 12
+minzoom: 7
+maxzoom: 12
+layout:
+  text-font:
+    - Noto Sans Bold
+  text-size: 12
+  text-max-width: 15
+  text-anchor: center
+  text-field: '{_name12}'
+  text-optional: true
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

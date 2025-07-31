@@ -1,0 +1,20 @@
+id: Landuse/LND_Natural_M/Wood/line
+type: line
+source: esri
+source-layer: LND_Natural_M
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 13
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#A3C495'
+  line-width:
+    stops:
+      - - 13
+        - 0
+      - - 17
+        - 2

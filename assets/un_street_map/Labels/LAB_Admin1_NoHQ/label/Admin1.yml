@@ -1,0 +1,17 @@
+id: Labels/LAB_Admin1_NoHQ/label/Admin1
+type: symbol
+source: esri
+source-layer: LAB_Admin1_NoHQ/label
+minzoom: 7
+maxzoom: 8
+layout:
+  text-font:
+    - Noto Sans Display SemiBold Italic
+  text-size: 12
+  text-letter-spacing: 0.1
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  text-color: '#686868'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

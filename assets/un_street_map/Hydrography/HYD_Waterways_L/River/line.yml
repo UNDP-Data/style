@@ -1,0 +1,20 @@
+id: Hydrography/HYD_Waterways_L/River/line
+type: line
+source: esri
+source-layer: HYD_Waterways_L
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 10.53
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#D8ECF6'
+  line-width:
+    stops:
+      - - 11.53
+        - 1.33333
+      - - 18.17
+        - 4.44444

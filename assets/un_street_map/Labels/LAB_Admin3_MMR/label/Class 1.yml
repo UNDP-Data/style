@@ -1,0 +1,17 @@
+id: Labels/LAB_Admin3_MMR/label/Class 1
+type: symbol
+source: esri
+source-layer: LAB_Admin3_MMR/label
+minzoom: 12
+maxzoom: 14
+layout:
+  text-font:
+    - Noto Sans Display SemiBold Italic
+  text-size: 10.6667
+  text-letter-spacing: 0.1
+  text-field: '{_name}'
+  text-optional: true
+paint:
+  text-color: '#828282'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 1.33333

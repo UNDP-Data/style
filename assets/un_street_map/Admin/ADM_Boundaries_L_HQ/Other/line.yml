@@ -1,0 +1,24 @@
+id: Admin/ADM_Boundaries_L_HQ/Other/line
+type: symbol
+source: esri
+source-layer: ADM_Boundaries_L_HQ
+filter:
+  - ==
+  - _symbol
+  - 3
+minzoom: 6
+layout:
+  icon-ignore-placement: true
+  symbol-placement: line
+  icon-image: ADM_Other_L
+  symbol-spacing: 5.66667
+  icon-rotation-alignment: map
+  icon-allow-overlap: true
+paint:
+  icon-opacity:
+    stops:
+      - - 5
+        - 0
+      - - 6
+        - 1
+  icon-color: '#393D40'

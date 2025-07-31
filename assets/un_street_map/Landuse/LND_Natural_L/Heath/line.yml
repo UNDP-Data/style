@@ -1,0 +1,20 @@
+id: Landuse/LND_Natural_L/Heath/line
+type: line
+source: esri
+source-layer: LND_Natural_L
+filter:
+  - ==
+  - _symbol
+  - 4
+minzoom: 13
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#D2DAC3'
+  line-width:
+    stops:
+      - - 13
+        - 0
+      - - 17
+        - 2

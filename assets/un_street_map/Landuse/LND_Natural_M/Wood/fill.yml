@@ -1,0 +1,18 @@
+id: Landuse/LND_Natural_M/Wood/fill
+type: fill
+source: esri
+source-layer: LND_Natural_M
+filter:
+  - ==
+  - _symbol
+  - 0
+minzoom: 8
+layout: {}
+paint:
+  fill-opacity:
+    stops:
+      - - 8
+        - 0
+      - - 9
+        - 1
+  fill-color: '#CFE6C3'

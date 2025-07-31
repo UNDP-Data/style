@@ -1,0 +1,12 @@
+id: Landuse/LND_Natural_M/Farmland/pattern
+type: fill
+source: esri
+source-layer: LND_Natural_M
+filter:
+  - ==
+  - _symbol
+  - 2
+minzoom: 12
+layout: {}
+paint:
+  fill-pattern: LND_Farmland

@@ -1,0 +1,30 @@
+id: Transport/TRA_Roads_A/Street/case
+type: line
+source: esri
+source-layer: TRA_Roads_A
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 12.53
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-color: '#B8B8B8'
+  line-width:
+    stops:
+      - - 8
+        - 0.6
+      - - 10
+        - 0.75
+      - - 12
+        - 1
+      - - 13
+        - 1.75
+      - - 15
+        - 3.5
+      - - 17
+        - 8
+      - - 19
+        - 21

@@ -1,0 +1,12 @@
+id: Landuse/LND_Urban_L/Industrial/fill
+type: fill
+source: esri
+source-layer: LND_Urban_L
+filter:
+  - ==
+  - _symbol
+  - 1
+minzoom: 10
+layout: {}
+paint:
+  fill-color: '#E1DEEC'
