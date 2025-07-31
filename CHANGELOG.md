@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.4.0
+
+### Minor Changes
+
+- 7195f9e: feat: added un streets style
+
 ## 2.3.4
 
 ### Patch Changes
