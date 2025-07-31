@@ -1,8 +1,12 @@
 version: 8
 name: UN Street Map
 metadata: {}
-sprite: https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Unite_StreetMapVT_CVW_V01/VectorTileServer/resources/sprites/sprite_S
-glyphs: https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Unite_StreetMapVT_CVW_V01/VectorTileServer/resources/fonts/{fontstack}/{range}.pbf
+sprite:
+  - id: undp
+    url: ./sprite/sprite
+  - id: default
+    url: https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Unite_StreetMapVT_CVW_V01/VectorTileServer/resources/sprites/sprite_S
+glyphs: https://fonts.undpgeohub.org/fonts/{fontstack}/{range}.pbf
 sources:
   esri:
     type: vector

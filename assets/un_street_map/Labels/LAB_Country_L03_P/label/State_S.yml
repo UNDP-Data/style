@@ -10,7 +10,7 @@ minzoom: 2
 maxzoom: 3
 layout:
   text-font:
-    - Open Sans Semibold
+    - Open Sans Semi Bold
   text-max-width: 20
   text-size: 8.33333
   text-anchor: center

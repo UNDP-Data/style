@@ -10,7 +10,7 @@ minzoom: 6
 maxzoom: 7
 layout:
   text-font:
-    - Open Sans SemiBold
+    - Open Sans Semi Bold
   text-size: 12
   text-anchor: center
   text-letter-spacing: 0.05
