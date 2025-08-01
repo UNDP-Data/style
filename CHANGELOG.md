@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.4.1
+
+### Patch Changes
+
+- 836a88e: fix: use UN admin boundaries layers instead of carto layers
+
 ## 2.4.0
 
 ### Minor Changes
