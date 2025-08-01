@@ -51,7 +51,7 @@ layout:
   text-rotate: 0
   text-max-angle: 45
   text-field: '{_name1}'
-  icon-image: POI_Airport
+  icon-image: esri:POI_Airport
   text-transform: none
 paint:
   icon-opacity: 1

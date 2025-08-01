@@ -5,7 +5,7 @@ source-layer: TRA_Ferries
 minzoom: 7
 layout:
   symbol-placement: line
-  icon-image: TRA_Ferries
+  icon-image: esri:TRA_Ferries
   symbol-spacing: 4
   icon-rotation-alignment: map
   icon-allow-overlap: true
