@@ -8,7 +8,7 @@ filter:
   - 20
 minzoom: 13
 layout:
-  icon-image: POI_Church
+  icon-image: esri:POI_Church
   icon-size:
     stops:
       - - 14

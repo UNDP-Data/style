@@ -10,7 +10,7 @@ minzoom: 3
 maxzoom: 6
 layout:
   symbol-placement: line
-  icon-image: ADM_Other_M
+  icon-image: esri:ADM_Other_M
   icon-size:
     stops:
       - - 4

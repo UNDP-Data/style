@@ -8,7 +8,7 @@ filter:
   - 8
 minzoom: 13
 layout:
-  icon-image: POI_Hospital
+  icon-image: esri:POI_Hospital
   icon-size:
     stops:
       - - 14

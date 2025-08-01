@@ -17,7 +17,7 @@ layout:
     - 0
     - -0.2
   text-field: '{_name14}'
-  icon-image: PPL_Town
+  icon-image: esri:PPL_Town
 paint:
   text-color: '#343434'
   text-halo-color: rgba(255,255,255,0.75)

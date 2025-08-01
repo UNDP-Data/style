@@ -9,7 +9,7 @@ filter:
 minzoom: 13
 layout:
   symbol-placement: line
-  icon-image: HYD_Drain
+  icon-image: esri:HYD_Drain
   icon-size:
     stops:
       - - 11.53

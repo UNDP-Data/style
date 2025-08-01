@@ -9,7 +9,7 @@ filter:
 minzoom: 4
 maxzoom: 11.53
 layout:
-  icon-image: PPL_National
+  icon-image: esri:PPL_National
   icon-size:
     stops:
       - - 4

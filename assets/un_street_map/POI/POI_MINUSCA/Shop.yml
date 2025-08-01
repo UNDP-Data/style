@@ -8,7 +8,7 @@ filter:
   - 16
 minzoom: 15.85
 layout:
-  icon-image: POI_Shop
+  icon-image: esri:POI_Shop
   icon-size:
     stops:
       - - 16

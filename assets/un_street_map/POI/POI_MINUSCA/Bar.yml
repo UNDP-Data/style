@@ -8,7 +8,7 @@ filter:
   - 7
 minzoom: 13.85
 layout:
-  icon-image: POI_Bar
+  icon-image: esri:POI_Bar
   icon-size:
     stops:
       - - 16

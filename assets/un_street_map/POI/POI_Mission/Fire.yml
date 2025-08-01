@@ -8,7 +8,7 @@ filter:
   - 15
 minzoom: 11
 layout:
-  icon-image: POI_Fire
+  icon-image: esri:POI_Fire
   icon-size:
     stops:
       - - 13

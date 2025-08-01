@@ -36,7 +36,7 @@ layout:
         - - 0
           - -1.2
   text-field: '{_name}'
-  icon-image: POI_Airport_S
+  icon-image: esri:POI_Airport_S
 paint:
   text-color: '#802677'
   text-halo-color: rgba(255,255,255,0.75)

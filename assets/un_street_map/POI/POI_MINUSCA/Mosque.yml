@@ -8,7 +8,7 @@ filter:
   - 21
 minzoom: 13
 layout:
-  icon-image: POI_Mosque
+  icon-image: esri:POI_Mosque
   icon-size:
     stops:
       - - 14

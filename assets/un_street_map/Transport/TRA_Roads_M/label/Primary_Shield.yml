@@ -20,7 +20,7 @@ layout:
     - -0.1
   text-field: '{_name}'
   icon-text-fit: width
-  icon-image: TRA_Primary/{_len}
+  icon-image: esri:TRA_Primary/{_len}
   icon-size: 0.8
   icon-rotation-alignment: viewport
   text-rotation-alignment: viewport

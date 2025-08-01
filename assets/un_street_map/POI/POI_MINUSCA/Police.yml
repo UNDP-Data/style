@@ -8,7 +8,7 @@ filter:
   - 6
 minzoom: 11
 layout:
-  icon-image: POI_Police
+  icon-image: esri:POI_Police
   icon-size:
     stops:
       - - 13
