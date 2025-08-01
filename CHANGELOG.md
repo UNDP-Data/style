@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.4.2
+
+### Patch Changes
+
+- 6d266b6: fix: supply correct un-esri sprite url
+
 ## 2.4.1
 
 ### Patch Changes
