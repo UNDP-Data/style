@@ -11,9 +11,9 @@ layout:
   icon-image:
     stops:
       - - 9
-        - POI_Airport_S
+        - esri:POI_Airport_S
       - - 10
-        - POI_Airport
+        - esri:POI_Airport
   icon-allow-overlap: false
   icon-size:
     stops:

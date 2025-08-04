@@ -8,7 +8,7 @@ filter:
   - 4
 minzoom: 12
 layout:
-  icon-image: POI_Bus
+  icon-image: esri:POI_Bus
   icon-size:
     stops:
       - - 13

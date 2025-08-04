@@ -9,7 +9,7 @@ filter:
 minzoom: 4
 maxzoom: 11.53
 layout:
-  icon-image: PPL_Territorial
+  icon-image: esri:PPL_Territorial
   icon-size:
     stops:
       - - 4

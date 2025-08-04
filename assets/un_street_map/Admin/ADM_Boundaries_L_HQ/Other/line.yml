@@ -10,7 +10,7 @@ minzoom: 6
 layout:
   icon-ignore-placement: true
   symbol-placement: line
-  icon-image: ADM_Other_L
+  icon-image: esri:ADM_Other_L
   symbol-spacing: 5.66667
   icon-rotation-alignment: map
   icon-allow-overlap: true

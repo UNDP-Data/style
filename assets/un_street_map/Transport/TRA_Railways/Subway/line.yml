@@ -9,7 +9,7 @@ filter:
 minzoom: 13
 layout:
   symbol-placement: line
-  icon-image: TRA_Subway
+  icon-image: esri:TRA_Subway
   icon-size:
     stops:
       - - 16

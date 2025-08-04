@@ -5,7 +5,7 @@ source-layer: LAB_Autonomous_L
 minzoom: 6
 maxzoom: 7
 layout:
-  icon-image: Labels/LAB_Autonomous_L
+  icon-image: esri:Labels/LAB_Autonomous_L
   icon-allow-overlap: true
   text-font:
     - Open Sans Regular

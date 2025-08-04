@@ -8,7 +8,7 @@ filter:
   - 4
 minzoom: 11
 layout:
-  icon-image: POI_Public
+  icon-image: esri:POI_Public
   icon-size:
     stops:
       - - 13

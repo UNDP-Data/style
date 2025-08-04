@@ -15,7 +15,7 @@ layout:
         - 0.5
       - - 3
         - 1
-  icon-image: ADM_Other_S
+  icon-image: esri:ADM_Other_S
   symbol-spacing: 2
   icon-rotation-alignment: map
   icon-ignore-placement: true

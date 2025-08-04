@@ -8,7 +8,7 @@ filter:
   - 14
 minzoom: 15
 layout:
-  icon-image: POI_Memorial
+  icon-image: esri:POI_Memorial
   icon-size:
     stops:
       - - 15
