@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.4.3
+
+### Patch Changes
+
+- d2f6f97: fix: switched the default sprite source
+
 ## 2.4.2
 
 ### Patch Changes
