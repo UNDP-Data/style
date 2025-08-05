@@ -1,6 +1,6 @@
 id: hillshade
 type: hillshade
-source: terrarium
+source: terrarium-hillshade
 layout:
   visibility: none
 paint:
