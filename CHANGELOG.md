@@ -1,5 +1,11 @@
 # @undp-data/style
 
+## 2.4.4
+
+### Patch Changes
+
+- 5d7536b: fix: added terrarium-hillshade only for hillshade layer since maplibre complains if both hillshade and terrain use the same raster-dem source.
+
 ## 2.4.3
 
 ### Patch Changes
