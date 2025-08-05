@@ -40,6 +40,20 @@ sources:
       - -90
       - 180
       - 90
+  terrarium-hillshade:
+    type: raster-dem
+    attribution: '&copy; <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noopener">Tilezen Joerd</a>'
+    tiles:
+      - https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png
+    minzoom: 0
+    maxzoom: 15
+    tileSize: 256
+    encoding: terrarium
+    bounds:
+      - -180
+      - -90
+      - 180
+      - 90
 sprite:
   - id: default
     url: ./sprite/sprite
