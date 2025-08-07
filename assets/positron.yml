@@ -230,5 +230,5 @@ layers:
   - !!inc/file un_street_map/Labels/LAB_Country_L/label/Territory.yml
   - !!inc/file un_street_map/Labels/LAB_Country_L/label/MiddleEast.yml
   - !!inc/file un_street_map/Labels/LAB_Country_L/label/State.yml
-id: positron
+id: voyager
 owner: Carto
