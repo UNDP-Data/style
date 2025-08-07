@@ -110,6 +110,11 @@ layers:
   - !!inc/file layers/bridge_mot_fill.yml
   - !!inc/file layers/building.yml
   - !!inc/file layers/building-top.yml
+
+  # UN admin boundaries
+  # ADM_Boundaries_L_HQ: z 5-
+  # ADM_Boundaries_M: z 4
+  # ADM_Boundaries_S: z 0-3
   - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Sovereign/halo.yml
   - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/International/halo.yml
   - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Armistice/halo.yml
@@ -150,6 +155,10 @@ layers:
   - !!inc/file un_street_map/Admin/ADM_Boundaries_S/Armistice.yml
   - !!inc/file un_street_map/Admin/ADM_Boundaries_S/Special.yml
   - !!inc/file un_street_map/Admin/ADM_Boundaries_S/International.yml
+
+  # carto style layers
+  # - !!inc/file layers/boundary_country_outline.yml
+  # - !!inc/file layers/boundary_country_inner.yml
   - !!inc/file layers/waterway_label.yml
   - !!inc/file layers/watername_ocean.yml
   - !!inc/file layers/watername_sea.yml
@@ -159,6 +168,12 @@ layers:
   - !!inc/file layers/place_suburbs.yml
   - !!inc/file layers/place_villages.yml
   - !!inc/file layers/place_town.yml
+  -
+  # carto country labels
+  # - !!inc/file layers/place_country_2.yml
+  # - !!inc/file layers/place_country_1.yml
+
+
   - !!inc/file layers/place_state.yml
   - !!inc/file layers/place_continent.yml
   - !!inc/file layers/place_city_r6.yml
