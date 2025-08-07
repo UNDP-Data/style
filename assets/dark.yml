@@ -112,10 +112,11 @@ layers:
   - !!inc/file dark/building.yml
   - !!inc/file dark/building-top.yml
 
-  # UN addmin boundaries
+  # UN admin boundaries
   # ADM_Boundaries_L_HQ: z 5-
   # ADM_Boundaries_M: z 4
   # ADM_Boundaries_S: z 0-3
+
   - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Sovereign/halo.yml
   - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/International/halo.yml
   - !!inc/file un_street_map/Admin/ADM_Boundaries_L_HQ/Armistice/halo.yml
@@ -170,8 +171,11 @@ layers:
   - !!inc/file dark/place_suburbs.yml
   - !!inc/file dark/place_villages.yml
   - !!inc/file dark/place_town.yml
-  - !!inc/file dark/place_country_2.yml
-  - !!inc/file dark/place_country_1.yml
+
+  # carto style label layers
+  #  - !!inc/file dark/place_country_2.yml
+  #  - !!inc/file dark/place_country_1.yml
+
   - !!inc/file dark/place_state.yml
   - !!inc/file dark/place_continent.yml
   - !!inc/file dark/place_city_r6.yml
@@ -188,5 +192,48 @@ layers:
   - !!inc/file dark/roadname_pri.yml
   - !!inc/file dark/roadname_major.yml
   - !!inc/file dark/housenumber.yml
-id: voyager
+
+
+   # UN admin labels
+  - !!inc/file un_street_map/Labels/LAB_Water_S/label/Ocean.yml
+  - !!inc/file un_street_map/Labels/LAB_Water_M/label/Ocean.yml
+  - !!inc/file un_street_map/Labels/LAB_Admin4_MMR/label/Class 1.yml
+  - !!inc/file un_street_map/Labels/LAB_Admin3_MMR/label/Class 1.yml
+  - !!inc/file un_street_map/Labels/LAB_Admin3_VMC/label/Municipality.yml
+  - !!inc/file un_street_map/Labels/LAB_Admin3_MIK/label/Municipality.yml
+  - !!inc/file un_street_map/Labels/LAB_Admin2_NoHQ/label/Admin2.yml
+  - !!inc/file un_street_map/Labels/LAB_Admin2_HQ/label/Admin2.yml
+  - !!inc/file un_street_map/Labels/LAB_Admin1_NoHQ/label/Admin1.yml
+  - !!inc/file un_street_map/Labels/LAB_Admin1_HQ/label/Admin1.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L03_P/label/Territory_NSG.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L03_P/label/Territory_SG.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L03_P/label/State_S.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L03_P/label/State_M.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L03_P/label/State_L.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L04_P/label/Territory_NSG.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L04_P/label/Territory_SG.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L04_P/label/State_S.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L04_P/label/State_M.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L04_P/label/State_L.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L05_P/label/Territory_NSG.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L05_P/label/Territory_SG.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L05_P/label/China.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L05_P/label/MiddleEast.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L05_P/label/State_S.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L05_P/label/State_M.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L05_P/label/State_L.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L06_P/label/Autonomies.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L06_P/label/Territory_SG.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L06_P/label/China.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L06_P/label/MiddleEast.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L06_P/label/Territory_NSG.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L06_P/label/State_S.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L06_P/label/State_M.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L06_P/label/State_L.yml
+  - !!inc/file un_street_map/Labels/LAB_Autonomous_L.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L/label/Territory.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L/label/MiddleEast.yml
+  - !!inc/file un_street_map/Labels/LAB_Country_L/label/State.yml
+
+id: dark
 owner: Carto
