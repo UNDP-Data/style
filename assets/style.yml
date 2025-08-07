@@ -168,12 +168,10 @@ layers:
   - !!inc/file layers/place_suburbs.yml
   - !!inc/file layers/place_villages.yml
   - !!inc/file layers/place_town.yml
-  -
+
   # carto country labels
   # - !!inc/file layers/place_country_2.yml
   # - !!inc/file layers/place_country_1.yml
-
-
   - !!inc/file layers/place_state.yml
   - !!inc/file layers/place_continent.yml
   - !!inc/file layers/place_city_r6.yml

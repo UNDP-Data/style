@@ -158,9 +158,9 @@ layers:
   - !!inc/file un_street_map/Admin/ADM_Boundaries_S/Special.yml
   - !!inc/file un_street_map/Admin/ADM_Boundaries_S/International.yml
 
-  # carto style layers
-  # - !!inc/file positron/boundary_country_outline.yml
-  # - !!inc/file positron/boundary_country_inner.yml
+# carto style layers
+# - !!inc/file positron/boundary_country_outline.yml
+# - !!inc/file positron/boundary_country_inner.yml
   - !!inc/file positron/waterway_label.yml
   - !!inc/file positron/watername_ocean.yml
   - !!inc/file positron/watername_sea.yml
