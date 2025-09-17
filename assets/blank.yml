@@ -2,6 +2,9 @@ version: 8
 name: Blank
 metadata: {}
 sources:
+  carto:
+    type: vector
+    url: https://tiles.basemaps.cartocdn.com/vector/carto.streets/v1/tiles.json
   terrarium:
     type: raster-dem
     attribution: '&copy; <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noopener">Tilezen Joerd</a>'
