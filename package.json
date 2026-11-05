@@ -103,7 +103,7 @@
   },
   "homepage": "https://github.com/UNDP-Data/style#readme",
   "devDependencies": {
-    "@changesets/cli": "^2.29.4",
+    "@changesets/cli": "^3.0.0",
     "@unvt/charites": "^2.1.1",
     "@unvt/sprite-one": "^0.1.1"
   },
